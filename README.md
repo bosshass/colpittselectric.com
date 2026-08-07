@@ -139,6 +139,18 @@ contentLocation, plus the sitewide Electrician/LocalBusiness schema with both
 Englewood and Cherry Hills Village in areaServed. No markup can assert permit
 records to Google.
 
+## AI IMAGES — REMOVED
+
+melissa-colpitts-electrical-foreman-jobsite-briefing.jpg was an AI-generated
+image (two figures from behind in branded Colpitts apparel). It was saved under a
+wrong filename and reached About, Commercial, Manpower and Home before being
+caught. It has been DELETED and all references repointed to real photos.
+
+Every remaining image in /images is either a real photograph of Melissa/her work,
+a real jobsite photo, an SBA mark, or a people-free illustrative lighting scene.
+Do not add generated jobsite imagery to this site — it now claims SBA 8(a) and
+cites a public permit record.
+
 ## Address / privacy
 
 The business address was REMOVED sitewide (2026-08-07). It was the owner's home
