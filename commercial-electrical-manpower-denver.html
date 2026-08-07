@@ -608,6 +608,31 @@ section.band.tint .factbox[open]>summary,section.band.light .factbox[open]>summa
 .footcta .btns{display:flex;gap:14px;flex-wrap:wrap}
 .footcta+.bigfoot{border-top:2px solid var(--violet)}
 @media(max-width:700px){.footcta .inner{padding:48px 20px}}
+
+/* ---------- 3-column service cards ---------- */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk)}
+.card3{background:var(--bone);color:var(--ink);display:flex;flex-direction:column;text-decoration:none}
+.card3 .shot{width:100%;height:280px;object-fit:cover;display:block}
+.card3 .body{padding:30px 28px 28px;display:flex;flex-direction:column;flex:1}
+.card3 h3{font-family:var(--head);font-size:.86rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--violet-deep);margin-bottom:12px}
+.card3 p{font-size:.92rem;color:var(--ink-70);line-height:1.6;margin:0 0 26px}
+.card3 .explore{margin-top:auto;display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-size:.76rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);transition:color .16s}
+.card3 .explore svg{transition:transform .16s}
+.card3:hover .explore{color:var(--violet)}
+.card3:hover .explore svg{transform:translateX(5px)}
+@media(max-width:900px){.cards3{grid-template-columns:1fr}.card3 .shot{height:230px}}
+
+/* ---------- about teaser ---------- */
+.abt{display:grid;grid-template-columns:1fr 1fr;background:var(--bone);color:var(--ink)}
+.abt-photo{position:relative;min-height:420px}
+.abt-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.abt-copy{padding:64px 56px;display:flex;flex-direction:column;justify-content:center;max-width:620px}
+.abt-copy p{color:var(--ink-70);font-size:.98rem;line-height:1.7}
+.abt-copy .explore{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);text-decoration:none;margin-top:8px;transition:color .16s}
+.abt-copy .explore svg{transition:transform .16s}
+.abt-copy .explore:hover{color:var(--violet)}
+.abt-copy .explore:hover svg{transform:translateX(5px)}
+@media(max-width:900px){.abt{grid-template-columns:1fr}.abt-photo{min-height:300px}.abt-copy{padding:40px 20px;max-width:none}}
 </style>
 </head>
 <body>

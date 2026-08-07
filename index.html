@@ -562,6 +562,31 @@ section.band.tint .factbox[open]>summary,section.band.light .factbox[open]>summa
 .footcta .btns{display:flex;gap:14px;flex-wrap:wrap}
 .footcta+.bigfoot{border-top:2px solid var(--violet)}
 @media(max-width:700px){.footcta .inner{padding:48px 20px}}
+
+/* ---------- 3-column service cards ---------- */
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk)}
+.card3{background:var(--bone);color:var(--ink);display:flex;flex-direction:column;text-decoration:none}
+.card3 .shot{width:100%;height:280px;object-fit:cover;display:block}
+.card3 .body{padding:30px 28px 28px;display:flex;flex-direction:column;flex:1}
+.card3 h3{font-family:var(--head);font-size:.86rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--violet-deep);margin-bottom:12px}
+.card3 p{font-size:.92rem;color:var(--ink-70);line-height:1.6;margin:0 0 26px}
+.card3 .explore{margin-top:auto;display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-size:.76rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);transition:color .16s}
+.card3 .explore svg{transition:transform .16s}
+.card3:hover .explore{color:var(--violet)}
+.card3:hover .explore svg{transform:translateX(5px)}
+@media(max-width:900px){.cards3{grid-template-columns:1fr}.card3 .shot{height:230px}}
+
+/* ---------- about teaser ---------- */
+.abt{display:grid;grid-template-columns:1fr 1fr;background:var(--bone);color:var(--ink)}
+.abt-photo{position:relative;min-height:420px}
+.abt-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.abt-copy{padding:64px 56px;display:flex;flex-direction:column;justify-content:center;max-width:620px}
+.abt-copy p{color:var(--ink-70);font-size:.98rem;line-height:1.7}
+.abt-copy .explore{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);text-decoration:none;margin-top:8px;transition:color .16s}
+.abt-copy .explore svg{transition:transform .16s}
+.abt-copy .explore:hover{color:var(--violet)}
+.abt-copy .explore:hover svg{transform:translateX(5px)}
+@media(max-width:900px){.abt{grid-template-columns:1fr}.abt-photo{min-height:300px}.abt-copy{padding:40px 20px;max-width:none}}
 </style>
 </head>
 <body>
@@ -588,9 +613,9 @@ section.band.tint .factbox[open]>summary,section.band.light .factbox[open]>summa
     </nav>
   </header>
   <div class="hero-copy">
-      <span class="eyebrow">Commercial electrical contracting</span>
-      <h1>Built for the jobsite. Not the sales pitch.</h1>
-      <p class="lede">Ground-up construction, tenant improvements, lighting, service, and electrical manpower throughout Denver Metro.</p>
+      <span class="eyebrow">Electrical contracting throughout Denver Metro</span>
+      <h1>Built to keep the job moving.</h1>
+      <p class="lede">Commercial electrical, residential service, and skilled electrical manpower backed by 20+ years in the trade.</p>
       <div class="hero-cta">
         <a class="btn" href="/contact">Walk a project with us <svg class="arw" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn ghost" href="/commercial-electrical-services-denver">Commercial services</a>
@@ -599,28 +624,31 @@ section.band.tint .factbox[open]>summary,section.band.light .factbox[open]>summa
   </div>
 
   <main id="main">
-    <div class="statbar">
-      <div class="inner">
-        <div class="stat"><span class="ring"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.2l5.9-.9L12 3Z"/></svg></span><span><b>20+</b><span>Years in the trade</span></span></div>
-        <div class="stat"><span class="ring"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 0 1 16 0"/><path d="M2 15h20"/><path d="M9 15V8a3 3 0 0 1 6 0v7"/></svg></span><span><b>Master</b><span>Electrician</span></span></div>
-        <div class="stat"><span class="ring"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="m8.5 13.5-1.5 7 5-2.5 5 2.5-1.5-7"/></svg></span><span><b>WOSB / EDWOSB</b><span>SBA certified</span></span></div>
-        <div class="stat"><span class="ring"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span><b>Denver SBE</b><span>City certified</span></span></div>
-      </div>
-    </div>
-
-    <div class="why">
-      <div class="why-copy">
-        <div class="portrait"><img src="/images/melissa-colpitts-master-electrician-denver.jpg" width="900" height="1124" alt="Melissa Colpitts, owner and Master Electrician at Colpitts Electric"></div>
-        <div>
-          <span class="eyebrow">Why Colpitts</span>
-          <h2>Run by someone who ran the jobs.</h2>
-          <div class="rulep"></div>
-          <p>Melissa Colpitts is a Master Electrician, former commercial foreman and superintendent, and business owner. She knows what it takes to get it built &mdash; and to get it done right.</p>
-          <p class="sig">M. Colpitts</p>
-          <p class="small" style="margin:0"><b>Founder / Master Electrician</b></p>
+        <div class="cards3">
+      <a class="card3" href="/commercial-electrical-services-denver">
+        <img class="shot" src="/images/commercial-exterior-building-and-landscape-lighting.jpg" width="709" height="1024" alt="Commercial building exterior at dusk with architectural lighting">
+        <div class="body">
+          <h3>Commercial</h3>
+          <p>Electrical construction, tenant improvements, lighting, service, and maintenance for commercial projects and properties.</p>
+          <span class="explore">Explore commercial <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
-      </div>
-      <div class="why-photo"><img src="/images/melissa-colpitts-commercial-electrical-rough-in.jpg" width="1000" height="1249" alt="Melissa Colpitts running cable at a commercial electrical rough-in"></div>
+      </a>
+      <a class="card3" href="/residential-electrician-denver">
+        <img class="shot" src="/images/residential-kitchen-pendant-lighting-installation.jpg" width="1600" height="900" alt="Residential kitchen with pendant and recessed lighting">
+        <div class="body">
+          <h3>Residential</h3>
+          <p>Reliable electrical service, upgrades, remodels, lighting, panels, and troubleshooting for Denver-area homeowners.</p>
+          <span class="explore">Explore residential <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+      <a class="card3" href="/commercial-electrical-manpower-denver">
+        <img class="shot" src="/images/melissa-colpitts-commercial-electrical-rough-in.jpg" width="1000" height="1249" alt="Skilled electrician working a commercial electrical rough-in on a Denver jobsite">
+        <div class="body">
+          <h3>Manpower</h3>
+          <p>Skilled electricians and field support when your crew needs additional hands to keep the project on schedule.</p>
+          <span class="explore">Explore manpower <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
     </div>
 
     <div class="splitdark">
@@ -645,49 +673,21 @@ section.band.tint .factbox[open]>summary,section.band.light .factbox[open]>summa
       </div>
     </div>
 
-    <section class="band light">
-      <div class="wrap">
-        <span class="eyebrow">Built to partner with</span>
-        <h2 style="margin-bottom:6px">Who we work for.</h2><div class="partners">
-              <div class="partner"><svg class="ic" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M10 21v-5h4v5"/></svg><span>General<br>contractors</span></div>
-              <div class="partner"><svg class="ic" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M3 9h18M9 9v12"/></svg><span>Developers +<br>owners</span></div>
-              <div class="partner"><svg class="ic" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V9l6-4 6 4v12"/><path d="M10 13h4M10 17h4"/></svg><span>Property<br>managers</span></div>
-              <div class="partner"><svg class="ic" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Architects +<br>engineers</span></div>
-              <div class="partner"><svg class="ic" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21V11l5 3V11l5 3V7l5 3v11"/></svg><span>Industrial +<br>facility teams</span></div>
-            </div>
-      </div>
-    </section>
-
-    <div class="credwrap">
-      <div class="credpanel">
-        <h3>Contracting credentials</h3>
-        <ul>
-          <li>SBA WOSB certified</li>
-          <li>SBA WOSB certified</li>
-          <li>SBA EDWOSB certified</li>
-          <li>Denver SBE certified</li>
-          <li>Woman owned &amp; operated</li>
-          <li>Colorado licensed &amp; insured</li>
-          <li>OSHA 30</li>
-          <li>Master Electrician</li>
-        </ul>
-      </div>
-      <div class="credmark">
-        <div class="big">WOSB</div>
-        <b>Certified</b>
-        <span>SBA WOSB &amp; EDWOSB certification</span>
-        <div style="display:flex;gap:12px;margin-top:18px">
-          <img src="/images/sba-8a-certified-electrical-contractor.jpg" width="520" height="650" alt="U.S. Small Business Administration WOSB Certified" style="width:88px;height:auto;background:#fff;padding:7px">
-          <img src="/images/sba-wosb-certified-electrical-contractor.jpg" width="520" height="650" alt="U.S. Small Business Administration WOSB Certified" style="width:88px;height:auto;background:#fff;padding:7px">
-        </div>
+            <div class="abt">
+      <div class="abt-photo"><img src="/images/colpitts-electricians-terminating-device-box.jpg" width="394" height="541" alt="Colpitts Electric electricians terminating conductors in a device box on a commercial jobsite"></div>
+      <div class="abt-copy">
+        <span class="eyebrow">Experience you can use.</span>
+        <p>Colpitts Electric brings more than two decades of hands-on electrical experience to every project.</p>
+        <p>We understand the plans, the field, the schedule, and the importance of clear communication from the first walkthrough through final completion.</p>
+        <a class="explore" href="/about-colpitts-electric">About Colpitts <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
 
     <section class="band">
       <div class="wrap split even" style="align-items:center">
         <div>
-          <h2>Let&rsquo;s build something that lasts.</h2>
-          <p class="lede" style="margin-top:18px">From first walk to final inspection, we keep the job moving and the communication clear.</p>
+          <h2>How we get it done.</h2>
+          <p class="lede" style="margin-top:18px">From first walk to final inspection, we keep the job moving and the communication clear. Four steps, in order, on every project.</p>
           <a class="btn" href="/contact">Start your project <svg class="arw" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
         <div>
