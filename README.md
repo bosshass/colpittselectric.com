@@ -80,6 +80,40 @@ amber highlight so it's visible on the page. Find them all:
    crew size or another company's branding creates real exposure in a
    prequalification or size/capability challenge.
 
+## Case studies page (/case-studies) — DRAFT
+
+Not in nav, noindex, excluded from sitemap.xml. Reach it by typing the URL.
+
+Before publishing:
+1. CLIENT NAMING — the client name was published on index.html and
+   commercial-electrical-services-denver.html and has now been REMOVED from both.
+   Those indexed pages now describe the work as "a 104,000 sq ft campus in
+   Cherry Hills Village," which is accurate, verifiable via permit #26-0472, and
+   does not name the client in marketing.
+   The client name remains only on /case-studies, which is noindex and unlinked.
+   Before naming the client (or Himmelman Construction) on any indexed page or
+   social post: check the subcontract for a publicity clause and get written
+   approval. Then re-add the name in one pass.
+2. State Colpitts' ACTUAL scope. The 104,207 sq ft and $16M figures are the
+   overall project, not Colpitts' contract. Attribute precisely or a GC will
+   discount the whole page.
+3. ~~Permit #26-0472~~ VERIFIED as Colpitts Electric LLC's own permit — Cherry
+   Hills Village non-residential, application #26-0729, status Approved, filed
+   2026-06-26, term through 2028-01-08. Colpitts is the electrical contractor of
+   record. This is now cited on the page as verifiable public record.
+   NOTE: the permit record shows NO Issued Date. Say "approved," not "issued,"
+   until that field is populated. Confirm with Cherry Hills Village whether the
+   permit has been issued and update the wording if so.
+4. Convention Center: confirm prime vs. subcontractor, dates, and outcome.
+5. Apprenticeship: confirm the REGISTERED program name and participant standing.
+6. Then: remove the noindex meta tag, add /case-studies to sitemap.xml, and add
+   a nav link to all seven pages.
+
+NOTE: there is no schema.org "Project" type. This page uses Article schema with
+contentLocation, plus the sitewide Electrician/LocalBusiness schema with both
+Englewood and Cherry Hills Village in areaServed. No markup can assert permit
+records to Google.
+
 ## After launch
 
 - Submit `sitemap.xml` in Google Search Console
