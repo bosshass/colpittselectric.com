@@ -162,6 +162,7 @@ a{color:inherit;text-decoration:none}
 
 /* ---------- GREYSCALE → COLOR ON HOVER ---------- */
 .gs{overflow:hidden}
+img{image-rendering:auto}
 .gs img{filter:grayscale(100%) contrast(1.04) brightness(.92);transition:filter .4s ease,transform .7s ease}
 .gs:hover img,.gs:focus-within img{filter:grayscale(0%) contrast(1.06) brightness(1.12) saturate(1.12)}
 figure.gs:hover img,a.gs:hover img{transform:scale(1.03)}
@@ -219,17 +220,17 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 
 /* ---------- split hero ---------- */
 .hero{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-bottom:1px solid var(--line-dk)}
-.hero .copy{padding:96px 56px 96px 0;max-width:660px;margin-left:auto;width:100%}
+.hero .copy{padding:78px 56px 78px 0;max-width:660px;margin-left:auto;width:100%;display:flex;flex-direction:column;justify-content:center}
 .hero h1{margin-bottom:20px}
 .hero .lede{margin-bottom:30px}
-.hero .shot{position:relative;min-height:520px}
+.hero .shot{position:relative;min-height:0;aspect-ratio:16/10}
 .hero .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .heroin{max-width:var(--w);margin:0 auto;padding-left:40px}
 @media(max-width:1000px){.hero{grid-template-columns:1fr}.hero .copy{padding:56px 20px;max-width:none}.heroin{padding-left:0}.hero .shot{min-height:300px}}
 
 /* ---------- 3 image tiles ---------- */
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border-bottom:1px solid var(--line-dk)}
-.tile{position:relative;min-height:330px;display:flex;align-items:flex-end;background:var(--ink2);overflow:hidden}
+.tile{position:relative;aspect-ratio:4/3;display:flex;align-items:flex-end;background:var(--ink2);overflow:hidden}
 .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(.42);transition:filter .4s ease,transform .7s ease}
 .tile:hover img{filter:grayscale(0%) brightness(.78) contrast(1.05) saturate(1.15);transform:scale(1.04)}
 .tile .in{position:relative;z-index:2;padding:30px 28px;width:100%}
@@ -269,7 +270,7 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 /* ---------- split feature (image + copy) ---------- */
 .feat{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
 .feat .copy{padding:80px 56px}
-.feat .shot{position:relative;min-height:440px}
+.feat .shot{position:relative;min-height:0;aspect-ratio:16/10}
 .feat .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .feat.rev .copy{order:2}
 .arrowlist{list-style:none;margin:26px 0 0;padding:0}
@@ -303,7 +304,7 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 
 /* ---------- work cards ---------- */
 .work3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.wcard{position:relative;min-height:380px;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink2)}
+.wcard{position:relative;aspect-ratio:4/3;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink2)}
 .wcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(.48);transition:filter .4s,transform .7s}
 .wcard:hover img{filter:grayscale(0%) brightness(.8) contrast(1.05) saturate(1.15);transform:scale(1.04)}
 .wcard .in{position:relative;z-index:2;padding:26px 24px}
