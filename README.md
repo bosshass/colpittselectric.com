@@ -114,6 +114,23 @@ contentLocation, plus the sitewide Electrician/LocalBusiness schema with both
 Englewood and Cherry Hills Village in areaServed. No markup can assert permit
 records to Google.
 
+## Address / privacy
+
+The business address was REMOVED sitewide (2026-08-07). It was the owner's home
+address and should not be published. Do not re-add it.
+
+Colpitts Electric is presented as a SERVICE-AREA BUSINESS:
+- Schema: PostalAddress with addressLocality "Denver", addressRegion "CO" only —
+  no streetAddress, no postalCode.
+- Footer and Contact page: "Denver, Colorado — Serving the Denver Metro area."
+- Littleton still appears only as a served city in the service-area list, which
+  is correct and carries no address.
+
+IMPORTANT — Google Business Profile: set the profile to "service area business"
+and HIDE the street address there too. A GBP listing showing the home address
+undoes this entirely, and GBP data outranks the website. Also check Bing Places,
+Yelp, Apple Business Connect, and any contractor directories for the same.
+
 ## After launch
 
 - Submit `sitemap.xml` in Google Search Console
