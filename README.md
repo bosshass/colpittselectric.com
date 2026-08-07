@@ -80,6 +80,22 @@ amber highlight so it's visible on the page. Find them all:
    crew size or another company's branding creates real exposure in a
    prequalification or size/capability challenge.
 
+## CERTIFICATIONS — two separate credentials
+
+Colpitts Electric appears to hold TWO distinct certifications. They are different
+programs, different agencies, and serve different buyers. Do not conflate them:
+
+1. SBA 8(a) — U.S. Small Business Administration, federal. Supports 8(a)
+   set-aside and sole-source federal contracting. Currently on the site.
+2. MWBE — City and County of Denver (Division of Small Business Opportunity).
+   Supports MWBE participation on City-funded projects. NOT currently on the
+   site — it was removed earlier when it couldn't be verified.
+
+VERIFY AND RESTORE the MWBE credential: exact designation (MBE, WBE, or MWBE —
+they are not interchangeable), certifying agency, certificate number, and
+expiration. Then add it to the Manpower and Commercial pages alongside 8(a).
+This is the credential that won the Convention Center work, so it matters.
+
 ## Case studies page (/case-studies) — DRAFT
 
 Not in nav, noindex, excluded from sitemap.xml. Reach it by typing the URL.
@@ -94,9 +110,13 @@ Before publishing:
    Before naming the client (or Himmelman Construction) on any indexed page or
    social post: check the subcontract for a publicity clause and get written
    approval. Then re-add the name in one pass.
-2. State Colpitts' ACTUAL scope. The 104,207 sq ft and $16M figures are the
-   overall project, not Colpitts' contract. Attribute precisely or a GC will
-   discount the whole page.
+2. ~~Colpitts' scope~~ RESOLVED for BRAVE: 426 LED fixtures + controls +
+   occupancy/vacancy sensors across Children's Ministry, upstairs offices,
+   fellowship hall, staff kitchen, conference rooms. Commenced June 2026,
+   three-month duration, scope still expanding. Naming approved by client.
+   NOTE: commercial terms from the SOW (30% restocking fee, cancellation and
+   shipping costs) are deliberately NOT on the public page. Those belong in the
+   contract, not in marketing.
 3. ~~Permit #26-0472~~ VERIFIED as Colpitts Electric LLC's own permit — Cherry
    Hills Village non-residential, application #26-0729, status Approved, filed
    2026-06-26, term through 2028-01-08. Colpitts is the electrical contractor of
@@ -104,7 +124,12 @@ Before publishing:
    NOTE: the permit record shows NO Issued Date. Say "approved," not "issued,"
    until that field is populated. Confirm with Cherry Hills Village whether the
    permit has been issued and update the wording if so.
-4. Convention Center: confirm prime vs. subcontractor, dates, and outcome.
+4. ~~Convention Center~~ RESOLVED: subcontract under Weifield Group (electrical
+   prime) under Hensel Phelps (GC), June–Dec 2025, $300,000, fulfilled in full.
+   Brought on for Denver MWBE participation. Naming approved by owner.
+   Courtesy step worth taking: tell Weifield the case study is going live and
+   ask for a link from their site. A prime who used her for participation credit
+   has every reason to say yes, and a GC/prime backlink outranks any on-page SEO.
 5. Apprenticeship: confirm the REGISTERED program name and participant standing.
 6. Then: remove the noindex meta tag, add /case-studies to sitemap.xml, and add
    a nav link to all seven pages.
