@@ -22,8 +22,8 @@
   "name": "Colpitts Electric LLC",
   "description": "Woman-owned, licensed and insured electrical contractor serving the Denver Metro area. Commercial new construction, tenant improvements, residential electrical, and electrical manpower.",
   "url": "https://colpittselectric.com/",
-  "telephone": "(303) 000-0000",
-  "email": "info@colpittselectric.com",
+  "telephone": "(303) 979-9422",
+  "email": "melissa@colpittselectric.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "4385 South Balsam Street",
@@ -117,7 +117,13 @@
       "closes": "17:00"
     }
   ],
-  "priceRange": "$$"
+  "priceRange": "$$",
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "certification",
+    "name": "SBA 8(a) Business Development Program",
+    "recognizedBy": {"@type": "GovernmentOrganization", "name": "U.S. Small Business Administration"}
+  }
 }</script>
 <style>
 :root{
@@ -264,6 +270,7 @@ a.path:hover{border-color:var(--violet);transform:translateY(-2px)}
 .owner{display:grid;grid-template-columns:.55fr 1.45fr;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .owner-photo{position:relative;background:var(--ink);min-height:300px;display:flex}
 .owner-photo .ph{width:100%;border:0;background:repeating-linear-gradient(45deg,#17171C 0 10px,#1E1E25 10px 20px)}
+.owner-img{width:100%;height:100%;object-fit:cover;object-position:center 22%;min-height:340px;display:block}
 .owner-photo .ph b{color:#C4B5FD}
 .owner-photo .ph i{color:#9A9AA8}
 .owner-photo .wedge{position:absolute;right:0;bottom:0;width:0;height:0;border-style:solid;border-width:0 0 120px 120px;border-color:transparent transparent var(--violet) transparent}
@@ -325,6 +332,27 @@ a.path:hover{border-color:var(--violet);transform:translateY(-2px)}
 .field textarea{resize:vertical;min-height:96px}
 @media(max-width:960px){.contact-grid{grid-template-columns:1fr;gap:28px}.f2{grid-template-columns:1fr}}
 
+.imgrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px;align-items:start}
+.imgrow figure{margin:0;border:1px solid var(--line);background:var(--paper)}
+.imgrow img{width:100%;height:300px;object-fit:cover;display:block}
+.imgrow figcaption{padding:12px 14px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink-50)}
+@media(max-width:800px){.imgrow{grid-template-columns:1fr}.imgrow img{height:240px}}
+
+.sba{display:flex;gap:18px;align-items:center;border:1.5px solid var(--violet);background:var(--violet-tint);padding:16px 18px;margin-top:22px}
+.sba img{width:72px;height:auto;flex-shrink:0;background:#fff;padding:6px}
+.sba b{font-family:var(--disp);font-size:.92rem;display:block;letter-spacing:-.01em}
+.sba span{font-size:.79rem;color:var(--ink-70);display:block;margin-top:2px}
+.sba a{display:inline-block;margin-top:7px;font-size:.75rem;font-weight:600;color:var(--violet);text-decoration:none}
+.sba a:hover{text-decoration:underline}
+.projgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:14px;margin-top:26px}
+.projgrid figure{margin:0;border:1px solid var(--line);background:var(--paper);overflow:hidden}
+.projgrid img{width:100%;height:260px;object-fit:cover;display:block}
+.projgrid figure.tall{grid-row:span 2}
+.projgrid figure.tall img{height:534px}
+.projgrid figcaption{padding:11px 13px;border-top:1px solid var(--line);font-size:.78rem;color:var(--ink-50)}
+@media(max-width:860px){.projgrid{grid-template-columns:1fr 1fr}.projgrid figure.tall{grid-row:auto}.projgrid figure.tall img{height:260px}}
+@media(max-width:560px){.projgrid{grid-template-columns:1fr}}
+
 footer{border-top:1px solid var(--line);padding:26px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.78rem;color:var(--ink-50)}
 footer nav{gap:18px;margin-left:0}
 footer nav a{text-decoration:none;font-size:.78rem}
@@ -353,7 +381,7 @@ footer nav a:hover{color:var(--violet)}
     </a>
     <nav aria-label="Main">
       <a class="nav-link" href="/commercial-electrical-services-denver">Commercial</a><a class="nav-link" href="/residential-electrician-denver">Residential</a><a class="nav-link" href="/commercial-electrical-manpower-denver">Manpower</a><a class="nav-link" href="/about-colpitts-electric">About</a><a class="nav-link" href="/contact">Contact</a>
-      <a class="hdr-phone" href="tel:+13030000000"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><span class="tbd">(303) 000-0000</span></a>
+      <a class="hdr-phone" href="tel:+13039799422"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>(303) 979-9422</a>
       <a class="btn" href="/contact">Request a quote <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
   </header>
@@ -388,7 +416,7 @@ footer nav a:hover{color:var(--violet)}
 
       <div class="trust">
         <p class="msg">Trusted by commercial builders, general contractors, property managers, and homeowners across the Denver Metro area.</p>
-        <div class="item"><svg class="" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>Woman owned &amp; operated</div>
+        <div class="item"><svg class="" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg>SBA 8(a) certified</div>
         <div class="item"><svg class="" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-2.5 5 2.5-1.5-7"/></svg>Licensed &amp; insured</div>
         <div class="item"><svg class="" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 0 1 16 0"/><path d="M2 15h20"/><path d="M9 15V8a3 3 0 0 1 6 0v7"/></svg>Safety first, always</div>
         <div class="item"><svg class="" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Master Electrician led</div>
@@ -402,7 +430,7 @@ footer nav a:hover{color:var(--violet)}
           <h2>Run by someone who ran the jobs.</h2>
         </div>
         <div>
-          <p>Colpitts Electric was founded by Master Electrician Melissa Colpitts, who brings <span class="tbd">more than 20 years</span> of hands-on electrical experience to every project &mdash; including more than five years as a commercial electrical foreman and superintendent.</p>
+          <p>Colpitts Electric was founded by Master Electrician Melissa Colpitts, who brings more than 20 years of hands-on electrical experience to every project &mdash; including more than five years as a commercial electrical foreman and superintendent.</p>
           <p>She understands the expectations placed on an electrical subcontractor because she has worked both in the field and in commercial jobsite leadership: leading crews, coordinating with general contractors and other trades, holding schedules, and moving complex commercial projects from planning through completion.</p>
           <p style="margin:0">That experience shapes how Colpitts Electric approaches every job today &mdash; commercial or residential.</p>
         </div>
@@ -427,22 +455,27 @@ footer nav a:hover{color:var(--violet)}
           <a class="btn ghost" href="/contact">Request an electrical quote <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
         <div class="work">
-          <figure><div class="ph"><div><b>Project photo 1</b><i>Real project. Alt text: commercial tenant improvement electrical installation in Denver.</i></div></div><figcaption><b>Project type</b><span><span class="tbd">City, CO</span></span></figcaption></figure>
-          <figure><div class="ph"><div><b>Project photo 2</b><i>Alt text: commercial lighting installation, Denver Metro.</i></div></div><figcaption><b>Project type</b><span><span class="tbd">City, CO</span></span></figcaption></figure>
-          <figure><div class="ph"><div><b>Project photo 3</b><i>Alt text: residential electrical panel upgrade, Littleton CO.</i></div></div><figcaption><b>Project type</b><span><span class="tbd">City, CO</span></span></figcaption></figure>
+          <figure><img src="/images/commercial-auditorium-renovation-denver-metro.jpg" width="1600" height="1200" loading="lazy" alt="Commercial auditorium build-out with new recessed lighting at Brave Church"><figcaption><b>Brave Church auditorium</b><span>Commercial build-out</span></figcaption></figure>
+          <figure><img src="/images/commercial-electrical-rough-in-overhead-cable.jpg" width="1000" height="1777" loading="lazy" alt="Overhead electrical rough-in across an open commercial ceiling"><figcaption><b>Electrical rough-in</b><span>Commercial tenant space</span></figcaption></figure>
+          <figure><img src="/images/residential-kitchen-pendant-lighting-installation.jpg" width="1600" height="900" loading="lazy" alt="Pendant and recessed lighting in a modern kitchen"><figcaption><b>Residential lighting</b><span>Pendant, recessed, under-cabinet</span></figcaption></figure>
         </div>
       </div>
     </section>
 
     <div class="owner">
       <div class="owner-photo">
-        <div class="ph"><div><b>Owner portrait</b><i>Melissa Colpitts &mdash; on a jobsite or in front of the truck.</i></div></div>
+        <img src="/images/melissa-colpitts-master-electrician-denver.jpg" width="900" height="1124" alt="Melissa Colpitts, owner and Master Electrician at Colpitts Electric" class="owner-img">
         <div class="wedge" aria-hidden="true"></div>
       </div>
       <div class="owner-copy">
         <div>
           <span class="eyebrow">About Colpitts Electric</span>
           <h2>A local company. A personal commitment.</h2>
+          <div class="sba">
+            <img src="/images/sba-8a-certified-electrical-contractor.jpg" width="420" height="525" alt="U.S. Small Business Administration 8(a) Certified">
+            <div><b>SBA 8(a) certified</b><span>Federally certified small disadvantaged business. Woman owned and operated.</span>
+            <a href="/commercial-electrical-manpower-denver">Federal &amp; subcontracting work &rarr;</a></div>
+          </div>
           <div class="wbe" style="margin-top:22px"><svg class="" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg><span><b>Woman owned and operated</b><span class="sub">Licensed and insured in Colorado</span></span></div>
           <p>Colpitts Electric LLC is dedicated to providing the highest quality electrical services throughout the Denver Metro area. We strive to be the electrical contractor of choice for commercial builders, home builders, property managers, and homeowners.</p>
           <p>Our team of highly skilled, detail-oriented electricians will take the time to make sure you are 100% satisfied with all of your electrical needs.</p>
@@ -450,7 +483,7 @@ footer nav a:hover{color:var(--violet)}
           <p class="small" style="margin:0"><b>Melissa Colpitts</b><br>Owner / Master Electrician</p>
         </div>
         <div class="creds">
-          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b><span class="tbd">more than 20 years</span> in the trade</b><span class="sub">Apprentice out of high school to Master Electrician</span></span></div>
+          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>more than 20 years in the trade</b><span class="sub">Apprentice out of high school to Master Electrician</span></span></div>
           <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M10 21v-5h4v5"/><path d="M8 11h1M15 11h1"/></svg><span><b>5+ years running commercial jobs</b><span class="sub">Foreman and superintendent experience</span></span></div>
           <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 0 1 16 0"/><path d="M2 15h20"/><path d="M9 15V8a3 3 0 0 1 6 0v7"/></svg><span><b>OSHA 30 &amp; electrical safety</b><span class="sub">First Aid/CPR, forklift, boom lift, mini excavator, Ramset</span></span></div>
           <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg><span><b>Based in Littleton</b><span class="sub">Serving the Denver Metro area and Front Range</span></span></div>
@@ -485,12 +518,12 @@ footer nav a:hover{color:var(--violet)}
       </svg><span class="logo-txt">COLPITTS<span>ELECTRIC</span></span></a>
     <span class="small" style="max-width:22ch;line-height:1.4">Powering spaces.<br>Supporting people.</span>
     <nav aria-label="Footer"><a href="/commercial-electrical-services-denver">Commercial</a><a href="/residential-electrician-denver">Residential</a><a href="/commercial-electrical-manpower-denver">Manpower</a><a href="/about-colpitts-electric">About</a><a href="/contact">Contact</a></nav>
-    <span>4385 S Balsam St, Littleton, CO 80123<br>Serving the Denver Metro area &middot; <a href="tel:+13030000000" style="text-decoration:none;font-weight:600;color:var(--violet)"><span class="tbd">(303) 000-0000</span></a></span>
-    <span class="foot-lic">Licensed &amp; insured &middot; <span class="tbd">CO Master License #000000</span></span>
+    <span>4385 S Balsam St, Littleton, CO 80123<br>Serving the Denver Metro area &middot; <a href="tel:+13039799422" style="text-decoration:none;font-weight:600;color:var(--violet)">(303) 979-9422</a></span>
+    <span class="foot-lic">Licensed &amp; insured</span>
     <span>&copy; 2026 Colpitts Electric LLC. All rights reserved.</span>
   </footer>
   </div>
 </div>
-<a class="callbar" href="tel:+13030000000"><svg class="" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> Call Colpitts Electric</a>
+<a class="callbar" href="tel:+13039799422"><svg class="" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> Call Colpitts Electric</a>
 </body>
 </html>

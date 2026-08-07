@@ -22,8 +22,8 @@
   "name": "Colpitts Electric LLC",
   "description": "Woman-owned, licensed and insured electrical contractor serving the Denver Metro area. Commercial new construction, tenant improvements, residential electrical, and electrical manpower.",
   "url": "https://colpittselectric.com/",
-  "telephone": "(303) 000-0000",
-  "email": "info@colpittselectric.com",
+  "telephone": "(303) 979-9422",
+  "email": "melissa@colpittselectric.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "4385 South Balsam Street",
@@ -117,7 +117,13 @@
       "closes": "17:00"
     }
   ],
-  "priceRange": "$$"
+  "priceRange": "$$",
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "certification",
+    "name": "SBA 8(a) Business Development Program",
+    "recognizedBy": {"@type": "GovernmentOrganization", "name": "U.S. Small Business Administration"}
+  }
 }</script>
 <style>
 :root{
@@ -264,6 +270,7 @@ a.path:hover{border-color:var(--violet);transform:translateY(-2px)}
 .owner{display:grid;grid-template-columns:.55fr 1.45fr;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .owner-photo{position:relative;background:var(--ink);min-height:300px;display:flex}
 .owner-photo .ph{width:100%;border:0;background:repeating-linear-gradient(45deg,#17171C 0 10px,#1E1E25 10px 20px)}
+.owner-img{width:100%;height:100%;object-fit:cover;object-position:center 22%;min-height:340px;display:block}
 .owner-photo .ph b{color:#C4B5FD}
 .owner-photo .ph i{color:#9A9AA8}
 .owner-photo .wedge{position:absolute;right:0;bottom:0;width:0;height:0;border-style:solid;border-width:0 0 120px 120px;border-color:transparent transparent var(--violet) transparent}
@@ -325,6 +332,33 @@ a.path:hover{border-color:var(--violet);transform:translateY(-2px)}
 .field textarea{resize:vertical;min-height:96px}
 @media(max-width:960px){.contact-grid{grid-template-columns:1fr;gap:28px}.f2{grid-template-columns:1fr}}
 
+.imgrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px;align-items:start}
+.imgrow figure{margin:0;border:1px solid var(--line);background:var(--paper)}
+.imgrow img{width:100%;height:300px;object-fit:cover;display:block}
+.imgrow figcaption{padding:12px 14px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink-50)}
+@media(max-width:800px){.imgrow{grid-template-columns:1fr}.imgrow img{height:240px}}
+
+.formstatus{font-size:.85rem;margin:14px 0 0;min-height:1.2em}
+.formstatus.ok{color:#166534;font-weight:600}
+.formstatus.err{color:#B91C1C;font-weight:600}
+#send:disabled{opacity:.6;cursor:not-allowed}
+form .field input:invalid:not(:placeholder-shown){border-color:#DC2626}
+
+.sba{display:flex;gap:18px;align-items:center;border:1.5px solid var(--violet);background:var(--violet-tint);padding:16px 18px;margin-top:22px}
+.sba img{width:72px;height:auto;flex-shrink:0;background:#fff;padding:6px}
+.sba b{font-family:var(--disp);font-size:.92rem;display:block;letter-spacing:-.01em}
+.sba span{font-size:.79rem;color:var(--ink-70);display:block;margin-top:2px}
+.sba a{display:inline-block;margin-top:7px;font-size:.75rem;font-weight:600;color:var(--violet);text-decoration:none}
+.sba a:hover{text-decoration:underline}
+.projgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:14px;margin-top:26px}
+.projgrid figure{margin:0;border:1px solid var(--line);background:var(--paper);overflow:hidden}
+.projgrid img{width:100%;height:260px;object-fit:cover;display:block}
+.projgrid figure.tall{grid-row:span 2}
+.projgrid figure.tall img{height:534px}
+.projgrid figcaption{padding:11px 13px;border-top:1px solid var(--line);font-size:.78rem;color:var(--ink-50)}
+@media(max-width:860px){.projgrid{grid-template-columns:1fr 1fr}.projgrid figure.tall{grid-row:auto}.projgrid figure.tall img{height:260px}}
+@media(max-width:560px){.projgrid{grid-template-columns:1fr}}
+
 footer{border-top:1px solid var(--line);padding:26px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.78rem;color:var(--ink-50)}
 footer nav{gap:18px;margin-left:0}
 footer nav a{text-decoration:none;font-size:.78rem}
@@ -353,7 +387,7 @@ footer nav a:hover{color:var(--violet)}
     </a>
     <nav aria-label="Main">
       <a class="nav-link" href="/commercial-electrical-services-denver">Commercial</a><a class="nav-link" href="/residential-electrician-denver">Residential</a><a class="nav-link" href="/commercial-electrical-manpower-denver">Manpower</a><a class="nav-link" href="/about-colpitts-electric">About</a><a class="nav-link" href="/contact" aria-current='page'>Contact</a>
-      <a class="hdr-phone" href="tel:+13030000000"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><span class="tbd">(303) 000-0000</span></a>
+      <a class="hdr-phone" href="tel:+13039799422"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>(303) 979-9422</a>
       <a class="btn" href="/contact">Request a quote <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
   </header>
@@ -374,55 +408,68 @@ footer nav a:hover{color:var(--violet)}
 <circle cx="4" cy="36" r="2"/><circle cx="20" cy="36" r="2"/><circle cx="36" cy="36" r="2"/><circle cx="52" cy="36" r="2"/>
 <circle cx="4" cy="52" r="2"/><circle cx="20" cy="52" r="2"/><circle cx="36" cy="52" r="2"/><circle cx="52" cy="52" r="2"/>
 <circle cx="4" cy="68" r="2"/><circle cx="20" cy="68" r="2"/><circle cx="36" cy="68" r="2"/><circle cx="52" cy="68" r="2"/></g></svg>
-          <div class="ph" style="min-height:320px"><div><b>Truck photo</b><i>Branded van or truck on a Denver-area jobsite. Alt text: Colpitts Electric service truck, Denver Metro.</i></div></div>
+          <img src="/images/colpitts-electric-service-van-denver.jpg" width="600" height="800" alt="Colpitts Electric service van" style="position:relative;z-index:1;width:100%;height:100%;object-fit:cover;min-height:320px">
         </div>
       </div>
     </div>
     <section class="band">
       <div class="wrap contact-grid">
         <div>
-          <div class="cinfo"><svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><span><b>Phone</b><span class="val"><span class="tbd">(303) 000-0000</span></span></span></div>
-          <div class="cinfo"><svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><span><b>Email</b><span class="val"><span class="tbd">info@colpittselectric.com</span></span></span></div>
+          <div class="cinfo"><svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><span><b>Phone</b><span class="val">(303) 979-9422</span></span></div>
+          <div class="cinfo"><svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><span><b>Email</b><span class="val">melissa@colpittselectric.com</span></span></div>
           <div class="cinfo"><svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg><span><b>Location</b><span class="val">4385 South Balsam Street<br>Littleton, Colorado 80123<br><span class="small">Serving the Denver Metro area</span></span></span></div>
           <div class="cinfo"><svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Hours</b><span class="val">Monday &ndash; Friday, 9:00 am &ndash; 5:00 pm<br><span class="small">Saturday and Sunday closed</span></span></span></div>
-          <div class="cinfo"><svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg><span><b>Certification</b><span class="val">Woman owned and operated<br><span class="small">Certification details: <span class="tbd">confirm designation & number</span></span></span></span></div>
+          <div class="cinfo"><svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg><span><b>Certification</b><span class="val">SBA 8(a) certified<br><span class="small">Woman owned and operated &middot; licensed and insured</span></span></span></div>
         </div>
 
         <div class="form-card">
           <h2 style="font-size:1.3rem;margin-bottom:6px">Request an electrical quote</h2>
           <p class="small" style="margin-bottom:20px">The more detail you include, the faster we can tell you whether we&rsquo;re the right fit.</p>
-          <div class="f2">
-            <div class="field"><label for="fn">Full name</label><input id="fn" name="name" type="text" autocomplete="name"></div>
-            <div class="field"><label for="co">Company (optional)</label><input id="co" name="company" type="text" autocomplete="organization"></div>
-          </div>
-          <div class="f2">
-            <div class="field"><label for="em">Email address</label><input id="em" name="email" type="email" autocomplete="email"></div>
-            <div class="field"><label for="ph">Phone number</label><input id="ph" name="phone" type="tel" autocomplete="tel"></div>
-          </div>
-          <div class="f2">
-            <div class="field"><label for="pt">Project type</label>
-              <select id="pt" name="project_type">
-                <option>Commercial &mdash; new construction</option>
-                <option>Commercial &mdash; tenant improvement / build-out</option>
-                <option>Commercial &mdash; remodel</option>
-                <option>Commercial &mdash; service call</option>
-                <option>Electrical manpower / subcontracting support</option>
-                <option>Residential &mdash; new construction</option>
-                <option>Residential &mdash; remodel or addition</option>
-                <option>Residential &mdash; service call</option>
-                <option>Troubleshooting and repairs</option>
-                <option>Electrical maintenance</option>
-                <option>Panels and electrical distribution</option>
-                <option>Lighting and lighting controls</option>
-                <option>Equipment / dedicated circuits</option>
-                <option>Something else</option>
-              </select>
+
+          <!-- FORMSPREE: replace YOUR_FORM_ID below with the ID from your Formspree dashboard.
+               It looks like https://formspree.io/f/xdorwkyz  ->  action="https://formspree.io/f/xdorwkyz" -->
+          <form id="quoteForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="_subject" value="New quote request from colpittselectric.com">
+            <div style="position:absolute;left:-9999px" aria-hidden="true">
+              <label for="company_website">Leave this field empty</label>
+              <input id="company_website" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
             </div>
-            <div class="field"><label for="loc">Project location (city)</label><input id="loc" name="location" type="text"></div>
-          </div>
-          <div class="field"><label for="ms">Scope, schedule, and electrical requirements</label><textarea id="ms" name="message"></textarea></div>
-          <button class="btn" type="button" id="send">Send message <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-          <p class="note" id="formnote">Wire this form to a real handler before launch (Formspree, Netlify Forms, or a mailto fallback) and add spam protection at the same time.</p>
+
+            <div class="f2">
+              <div class="field"><label for="fn">Full name</label><input id="fn" name="name" type="text" autocomplete="name" required></div>
+              <div class="field"><label for="co">Company (optional)</label><input id="co" name="company" type="text" autocomplete="organization"></div>
+            </div>
+            <div class="f2">
+              <div class="field"><label for="em">Email address</label><input id="em" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="ph">Phone number</label><input id="ph" name="phone" type="tel" autocomplete="tel"></div>
+            </div>
+            <div class="f2">
+              <div class="field"><label for="pt">Project type</label>
+                <select id="pt" name="project_type">
+                  <option>Commercial &mdash; new construction</option>
+                  <option>Commercial &mdash; tenant improvement / build-out</option>
+                  <option>Commercial &mdash; remodel</option>
+                  <option>Commercial &mdash; service call</option>
+                  <option>Electrical manpower / subcontracting support</option>
+                  <option>Residential &mdash; new construction</option>
+                  <option>Residential &mdash; remodel or addition</option>
+                  <option>Residential &mdash; service call</option>
+                  <option>Troubleshooting and repairs</option>
+                  <option>Electrical maintenance</option>
+                  <option>Panels and electrical distribution</option>
+                  <option>Lighting and lighting controls</option>
+                  <option>Equipment / dedicated circuits</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="field"><label for="loc">Project location (city)</label><input id="loc" name="location" type="text"></div>
+            </div>
+            <div class="field"><label for="ms">Scope, schedule, and electrical requirements</label><textarea id="ms" name="message" required></textarea></div>
+
+            <button class="btn" type="submit" id="send">Send message <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <p class="formstatus" id="formstatus" role="status" aria-live="polite"></p>
+            <p class="note">We&rsquo;ll get back to you at the phone number or email you provide.</p>
+          </form>
         </div>
       </div>
     </section>
@@ -455,13 +502,48 @@ footer nav a:hover{color:var(--violet)}
     <div class="wrap" style="padding-top:0;padding-bottom:60px">
       <div class="cta-strip">
         <p>Prefer to talk it through? Give us a call.</p>
-        <a class="btn" href="tel:+13030000000" style="background:var(--violet-bright)">Call Colpitts Electric <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="tel:+13039799422" style="background:var(--violet-bright)">Call Colpitts Electric <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
     <script>
-    document.getElementById('send').addEventListener('click',function(){
-      document.getElementById('formnote').textContent='Form not connected yet. Wire this to a handler before launch so messages actually arrive.';
-    });
+    (function(){
+      var form = document.getElementById('quoteForm');
+      var status = document.getElementById('formstatus');
+      var btn = document.getElementById('send');
+      if(!form) return;
+
+      form.addEventListener('submit', function(e){
+        if(form.action.indexOf('YOUR_FORM_ID') !== -1){
+          e.preventDefault();
+          status.className = 'formstatus err';
+          status.textContent = 'Form not configured yet: replace YOUR_FORM_ID in contact.html with your Formspree form ID.';
+          return;
+        }
+        e.preventDefault();
+        status.className = 'formstatus';
+        status.textContent = 'Sending\u2026';
+        btn.disabled = true;
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        }).then(function(res){
+          if(res.ok){
+            form.reset();
+            status.className = 'formstatus ok';
+            status.textContent = 'Thanks \u2014 your message is on its way. We\u2019ll be in touch shortly.';
+          } else {
+            return res.json().then(function(d){
+              throw new Error((d.errors || []).map(function(x){return x.message;}).join(', ') || 'Submission failed');
+            });
+          }
+        }).catch(function(err){
+          status.className = 'formstatus err';
+          status.textContent = 'Something went wrong. Please call (303) 979-9422 or email melissa@colpittselectric.com.';
+        }).finally(function(){ btn.disabled = false; });
+      });
+    })();
     </script>
 
   </main>
@@ -475,12 +557,12 @@ footer nav a:hover{color:var(--violet)}
       </svg><span class="logo-txt">COLPITTS<span>ELECTRIC</span></span></a>
     <span class="small" style="max-width:22ch;line-height:1.4">Powering spaces.<br>Supporting people.</span>
     <nav aria-label="Footer"><a href="/commercial-electrical-services-denver">Commercial</a><a href="/residential-electrician-denver">Residential</a><a href="/commercial-electrical-manpower-denver">Manpower</a><a href="/about-colpitts-electric">About</a><a href="/contact">Contact</a></nav>
-    <span>4385 S Balsam St, Littleton, CO 80123<br>Serving the Denver Metro area &middot; <a href="tel:+13030000000" style="text-decoration:none;font-weight:600;color:var(--violet)"><span class="tbd">(303) 000-0000</span></a></span>
-    <span class="foot-lic">Licensed &amp; insured &middot; <span class="tbd">CO Master License #000000</span></span>
+    <span>4385 S Balsam St, Littleton, CO 80123<br>Serving the Denver Metro area &middot; <a href="tel:+13039799422" style="text-decoration:none;font-weight:600;color:var(--violet)">(303) 979-9422</a></span>
+    <span class="foot-lic">Licensed &amp; insured</span>
     <span>&copy; 2026 Colpitts Electric LLC. All rights reserved.</span>
   </footer>
   </div>
 </div>
-<a class="callbar" href="tel:+13030000000"><svg class="" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> Call Colpitts Electric</a>
+<a class="callbar" href="tel:+13039799422"><svg class="" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> Call Colpitts Electric</a>
 </body>
 </html>

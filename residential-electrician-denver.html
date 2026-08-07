@@ -22,8 +22,8 @@
   "name": "Colpitts Electric LLC",
   "description": "Woman-owned, licensed and insured electrical contractor serving the Denver Metro area. Commercial new construction, tenant improvements, residential electrical, and electrical manpower.",
   "url": "https://colpittselectric.com/",
-  "telephone": "(303) 000-0000",
-  "email": "info@colpittselectric.com",
+  "telephone": "(303) 979-9422",
+  "email": "melissa@colpittselectric.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "4385 South Balsam Street",
@@ -117,7 +117,13 @@
       "closes": "17:00"
     }
   ],
-  "priceRange": "$$"
+  "priceRange": "$$",
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "certification",
+    "name": "SBA 8(a) Business Development Program",
+    "recognizedBy": {"@type": "GovernmentOrganization", "name": "U.S. Small Business Administration"}
+  }
 }</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -310,6 +316,7 @@ a.path:hover{border-color:var(--violet);transform:translateY(-2px)}
 .owner{display:grid;grid-template-columns:.55fr 1.45fr;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .owner-photo{position:relative;background:var(--ink);min-height:300px;display:flex}
 .owner-photo .ph{width:100%;border:0;background:repeating-linear-gradient(45deg,#17171C 0 10px,#1E1E25 10px 20px)}
+.owner-img{width:100%;height:100%;object-fit:cover;object-position:center 22%;min-height:340px;display:block}
 .owner-photo .ph b{color:#C4B5FD}
 .owner-photo .ph i{color:#9A9AA8}
 .owner-photo .wedge{position:absolute;right:0;bottom:0;width:0;height:0;border-style:solid;border-width:0 0 120px 120px;border-color:transparent transparent var(--violet) transparent}
@@ -371,6 +378,27 @@ a.path:hover{border-color:var(--violet);transform:translateY(-2px)}
 .field textarea{resize:vertical;min-height:96px}
 @media(max-width:960px){.contact-grid{grid-template-columns:1fr;gap:28px}.f2{grid-template-columns:1fr}}
 
+.imgrow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px;align-items:start}
+.imgrow figure{margin:0;border:1px solid var(--line);background:var(--paper)}
+.imgrow img{width:100%;height:300px;object-fit:cover;display:block}
+.imgrow figcaption{padding:12px 14px;border-top:1px solid var(--line);font-size:.8rem;color:var(--ink-50)}
+@media(max-width:800px){.imgrow{grid-template-columns:1fr}.imgrow img{height:240px}}
+
+.sba{display:flex;gap:18px;align-items:center;border:1.5px solid var(--violet);background:var(--violet-tint);padding:16px 18px;margin-top:22px}
+.sba img{width:72px;height:auto;flex-shrink:0;background:#fff;padding:6px}
+.sba b{font-family:var(--disp);font-size:.92rem;display:block;letter-spacing:-.01em}
+.sba span{font-size:.79rem;color:var(--ink-70);display:block;margin-top:2px}
+.sba a{display:inline-block;margin-top:7px;font-size:.75rem;font-weight:600;color:var(--violet);text-decoration:none}
+.sba a:hover{text-decoration:underline}
+.projgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:14px;margin-top:26px}
+.projgrid figure{margin:0;border:1px solid var(--line);background:var(--paper);overflow:hidden}
+.projgrid img{width:100%;height:260px;object-fit:cover;display:block}
+.projgrid figure.tall{grid-row:span 2}
+.projgrid figure.tall img{height:534px}
+.projgrid figcaption{padding:11px 13px;border-top:1px solid var(--line);font-size:.78rem;color:var(--ink-50)}
+@media(max-width:860px){.projgrid{grid-template-columns:1fr 1fr}.projgrid figure.tall{grid-row:auto}.projgrid figure.tall img{height:260px}}
+@media(max-width:560px){.projgrid{grid-template-columns:1fr}}
+
 footer{border-top:1px solid var(--line);padding:26px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.78rem;color:var(--ink-50)}
 footer nav{gap:18px;margin-left:0}
 footer nav a{text-decoration:none;font-size:.78rem}
@@ -399,7 +427,7 @@ footer nav a:hover{color:var(--violet)}
     </a>
     <nav aria-label="Main">
       <a class="nav-link" href="/commercial-electrical-services-denver">Commercial</a><a class="nav-link" href="/residential-electrician-denver" aria-current='page'>Residential</a><a class="nav-link" href="/commercial-electrical-manpower-denver">Manpower</a><a class="nav-link" href="/about-colpitts-electric">About</a><a class="nav-link" href="/contact">Contact</a>
-      <a class="hdr-phone" href="tel:+13030000000"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><span class="tbd">(303) 000-0000</span></a>
+      <a class="hdr-phone" href="tel:+13039799422"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>(303) 979-9422</a>
       <a class="btn" href="/contact">Request a quote <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
   </header>
@@ -420,7 +448,7 @@ footer nav a:hover{color:var(--violet)}
 <circle cx="4" cy="36" r="2"/><circle cx="20" cy="36" r="2"/><circle cx="36" cy="36" r="2"/><circle cx="52" cy="36" r="2"/>
 <circle cx="4" cy="52" r="2"/><circle cx="20" cy="52" r="2"/><circle cx="36" cy="52" r="2"/><circle cx="52" cy="52" r="2"/>
 <circle cx="4" cy="68" r="2"/><circle cx="20" cy="68" r="2"/><circle cx="36" cy="68" r="2"/><circle cx="52" cy="68" r="2"/></g></svg>
-          <div class="ph" style="min-height:320px"><div><b>Residential photo</b><i>Finished kitchen or living space with visible lighting work. Alt text: residential lighting installation, Denver Metro.</i></div></div>
+          <img src="/images/residential-kitchen-pendant-lighting-installation.jpg" width="1600" height="900" alt="Pendant and recessed lighting in a modern open-plan kitchen" style="position:relative;z-index:1;width:100%;height:100%;object-fit:cover;min-height:320px">
         </div>
       </div>
     </div>
@@ -428,7 +456,7 @@ footer nav a:hover{color:var(--violet)}
       <div class="wrap">
         <span class="eyebrow">Dependable electrical service for your home</span>
         <h2 style="margin-bottom:8px">Residential Electrical Services</h2>
-        <p class="lede">Our residential electrical work is led by Master Electrician Melissa Colpitts, who brings <span class="tbd">more than 20 years</span> of electrical experience to every project.</p>
+        <p class="lede">Our residential electrical work is led by Master Electrician Melissa Colpitts, who brings more than 20 years of electrical experience to every project.</p>
         <div class="svcs3">
           <div class="svc-card"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><h3>Residential Electrical Troubleshooting</h3><p>Flickering lights, frequently tripped breakers, dead outlets, inconsistent power, burning odors, buzzing devices, and warm switches can all indicate a problem that needs professional attention. We identify the source, explain what we find, and recommend the appropriate repair.</p><ul><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Breakers that repeatedly trip</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Outlets or switches that no longer work</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Flickering or dimming lights</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Partial power loss</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Damaged electrical devices</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Overloaded circuits</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Unusual electrical sounds or odors</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Recurring electrical problems</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>General electrical safety concerns</span></li></ul></div>
           <div class="svc-card"><svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><h3>Residential Electrical Service Calls</h3><p>Not every electrical project requires a complete remodel. We provide residential service calls for repairs, replacements, electrical additions, and smaller projects throughout the home.</p><ul><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Outlet and switch replacement</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Lighting repairs</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Fixture installation</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Circuit additions</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Dedicated electrical circuits</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Breaker replacement</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Equipment and appliance connections</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Exterior electrical repairs</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Electrical safety corrections</span></li></ul></div>
@@ -471,13 +499,15 @@ footer nav a:hover{color:var(--violet)}
 
     <section class="band tint">
       <div class="wrap">
-        <span class="eyebrow">Recent residential work</span>
-        <h2 style="margin-bottom:22px">Work we are proud of.</h2>
-        <div class="work">
-          <figure><div class="ph"><div><b>Residential photo 1</b><i>Alt text: residential kitchen lighting installation, Denver Metro.</i></div></div><figcaption><b>Project type</b><span><span class="tbd">City, CO</span></span></figcaption></figure>
-          <figure><div class="ph"><div><b>Residential photo 2</b><i>Alt text: home remodel electrical rough-in, Littleton CO.</i></div></div><figcaption><b>Project type</b><span><span class="tbd">City, CO</span></span></figcaption></figure>
-          <figure><div class="ph"><div><b>Residential photo 3</b><i>Alt text: residential electrical panel upgrade, Denver CO.</i></div></div><figcaption><b>Project type</b><span><span class="tbd">City, CO</span></span></figcaption></figure>
+        <span class="eyebrow">Residential lighting</span>
+        <h2 style="margin-bottom:8px">Lighting changes how a room works.</h2>
+        <p class="lede">Recessed and pendant lighting, exterior and landscape lighting, dimmers and controls, and fixture upgrades throughout the home.</p>
+        <div class="imgrow">
+          <figure><img src="/images/outdoor-landscape-lighting-installation.jpg" width="1500" height="1000" loading="lazy" alt="Landscape and pathway lighting on a Colorado foothills patio at dusk"><figcaption>Exterior, landscape, and pathway lighting</figcaption></figure>
+          <figure><img src="/images/bathroom-vanity-lighting-installation.jpg" width="1400" height="933" loading="lazy" alt="Vanity sconces, recessed lighting, and under-cabinet accent lighting in a remodeled bathroom"><figcaption>Bathroom vanity, sconce, and accent lighting</figcaption></figure>
+          <figure><img src="/images/residential-kitchen-pendant-lighting-installation.jpg" width="1600" height="900" loading="lazy" alt="Pendant lighting over a kitchen island with under-cabinet lighting"><figcaption>Kitchen pendant, recessed, and under-cabinet lighting</figcaption></figure>
         </div>
+        <p class="note">Photography shown is illustrative of the lighting work we perform. Replace with photos of completed Colpitts Electric projects as they become available.</p>
       </div>
     </section>
 
@@ -515,12 +545,12 @@ footer nav a:hover{color:var(--violet)}
       </svg><span class="logo-txt">COLPITTS<span>ELECTRIC</span></span></a>
     <span class="small" style="max-width:22ch;line-height:1.4">Powering spaces.<br>Supporting people.</span>
     <nav aria-label="Footer"><a href="/commercial-electrical-services-denver">Commercial</a><a href="/residential-electrician-denver">Residential</a><a href="/commercial-electrical-manpower-denver">Manpower</a><a href="/about-colpitts-electric">About</a><a href="/contact">Contact</a></nav>
-    <span>4385 S Balsam St, Littleton, CO 80123<br>Serving the Denver Metro area &middot; <a href="tel:+13030000000" style="text-decoration:none;font-weight:600;color:var(--violet)"><span class="tbd">(303) 000-0000</span></a></span>
-    <span class="foot-lic">Licensed &amp; insured &middot; <span class="tbd">CO Master License #000000</span></span>
+    <span>4385 S Balsam St, Littleton, CO 80123<br>Serving the Denver Metro area &middot; <a href="tel:+13039799422" style="text-decoration:none;font-weight:600;color:var(--violet)">(303) 979-9422</a></span>
+    <span class="foot-lic">Licensed &amp; insured</span>
     <span>&copy; 2026 Colpitts Electric LLC. All rights reserved.</span>
   </footer>
   </div>
 </div>
-<a class="callbar" href="tel:+13030000000"><svg class="" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> Call Colpitts Electric</a>
+<a class="callbar" href="tel:+13039799422"><svg class="" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> Call Colpitts Electric</a>
 </body>
 </html>
