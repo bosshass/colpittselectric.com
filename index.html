@@ -221,7 +221,7 @@ section.band.tint .btn.ghost:hover,section.band.light .btn.ghost:hover{backgroun
 /* ---------- HERO ---------- */
 .hero{position:relative;display:block;border:0;margin:0;min-height:600px;overflow:hidden;background:var(--ink)}
 .hero-bg{position:absolute;inset:0;z-index:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:72% 26%}
 .hero-bg::after{content:"";position:absolute;inset:0;
   background:linear-gradient(100deg,rgba(8,8,10,.97) 0%,rgba(8,8,10,.9) 34%,rgba(8,8,10,.42) 62%,rgba(8,8,10,.25) 100%)}
 .hero-copy{position:relative;z-index:2;max-width:var(--w);margin:0 auto;padding:90px 40px 110px}
@@ -530,6 +530,38 @@ footer nav a:hover{color:#fff}
 .bigfoot .bottom{max-width:var(--w);margin:44px auto 0;border-top:1px solid var(--line-dk);padding:20px 0 28px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.74rem;color:#6B6B76}
 @media(max-width:1000px){.bigfoot .cols{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.bigfoot{padding:40px 20px 0}.bigfoot .cols{grid-template-columns:1fr}}
+
+/* ---------- collapsible fact panel ---------- */
+.factbox{border:1px solid var(--line-dk);margin-top:26px;background:var(--ink-2)}
+section.band.tint .factbox,section.band.light .factbox{border-color:var(--line);background:var(--paper)}
+.factbox>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;font-family:var(--head);font-size:.74rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+section.band.tint .factbox>summary,section.band.light .factbox>summary{color:var(--ink)}
+.factbox>summary::-webkit-details-marker{display:none}
+.factbox>summary:hover{background:rgba(124,58,237,.08)}
+.factbox>summary .hint{font-family:var(--body);font-size:.74rem;font-weight:500;letter-spacing:0;text-transform:none;color:#8A8A95}
+.factbox>summary .chev{width:26px;height:26px;border:1.5px solid var(--violet);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--violet-bright);flex-shrink:0;font-size:1rem;line-height:1;transition:transform .18s}
+.factbox[open]>summary .chev{transform:rotate(45deg)}
+.factbox[open]>summary{border-bottom:1px solid var(--line-dk)}
+section.band.tint .factbox[open]>summary,section.band.light .factbox[open]>summary{border-bottom-color:var(--line)}
+.factbox[open]>summary .hint{visibility:hidden;position:relative}
+.factbox[open]>summary .hint::after{content:"Tap to collapse";visibility:visible;position:absolute;left:0;top:0;white-space:nowrap}
+.factbox .creds{border:0;margin:0}
+.factbox .cred:last-child{border-bottom:0}
+
+.portrait{width:210px;flex-shrink:0}
+.portrait img{width:100%;height:auto;display:block;border-bottom:4px solid var(--violet)}
+@media(max-width:960px){.portrait{width:160px}}
+
+.footcta{position:relative;overflow:hidden;background:var(--ink)}
+.footcta .bg{position:absolute;inset:0;z-index:0}
+.footcta .bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.footcta .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(95deg,rgba(8,8,10,.97) 0%,rgba(8,8,10,.92) 38%,rgba(8,8,10,.55) 68%,rgba(8,8,10,.35) 100%)}
+.footcta .inner{position:relative;z-index:2;max-width:var(--w);margin:0 auto;padding:72px 40px}
+.footcta h2{margin-bottom:14px}
+.footcta p{color:#B9B9C4;margin-bottom:26px}
+.footcta .btns{display:flex;gap:14px;flex-wrap:wrap}
+.footcta+.bigfoot{border-top:2px solid var(--violet)}
+@media(max-width:700px){.footcta .inner{padding:48px 20px}}
 </style>
 </head>
 <body>
@@ -537,7 +569,7 @@ footer nav a:hover{color:#fff}
 <div class="frame">
   <div class="sheet">
   <div class="hero">
-    <div class="hero-bg"><img src="/images/commercial-auditorium-renovation-denver-metro.jpg" width="1600" height="1200" alt="Commercial electrical work in progress on a Denver Metro jobsite"></div>
+    <div class="hero-bg"><img src="/images/melissa-colpitts-master-electrician-jobsite.jpg" width="908" height="888" alt="Melissa Colpitts, Master Electrician, working on a commercial jobsite in Denver"></div>
   <header>
     <a class="logo" href="/" aria-label="Colpitts Electric home">
       <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -555,7 +587,6 @@ footer nav a:hover{color:#fff}
       <a class="btn" href="/contact">Request a quote <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </nav>
   </header>
-  <main id="main">
   <div class="hero-copy">
       <span class="eyebrow">Commercial electrical contracting</span>
       <h1>Built for the jobsite. Not the sales pitch.</h1>
@@ -567,18 +598,19 @@ footer nav a:hover{color:#fff}
     </div>
   </div>
 
+  <main id="main">
     <div class="statbar">
       <div class="inner">
         <div class="stat"><span class="ring"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8L3.5 9.2l5.9-.9L12 3Z"/></svg></span><span><b>20+</b><span>Years in the trade</span></span></div>
         <div class="stat"><span class="ring"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 0 1 16 0"/><path d="M2 15h20"/><path d="M9 15V8a3 3 0 0 1 6 0v7"/></svg></span><span><b>Master</b><span>Electrician</span></span></div>
         <div class="stat"><span class="ring"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="m8.5 13.5-1.5 7 5-2.5 5 2.5-1.5-7"/></svg></span><span><b>WOSB / EDWOSB</b><span>SBA certified</span></span></div>
-        <div class="stat"><span class="ring"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span><b>WOSB / EDWOSB</b><span>SBA certified</span></span></div>
+        <div class="stat"><span class="ring"><svg class="" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg></span><span><b>Denver SBE</b><span>City certified</span></span></div>
       </div>
     </div>
 
     <div class="why">
       <div class="why-copy">
-        <div class="bignum">05+<small>Years running commercial jobs</small></div>
+        <div class="portrait"><img src="/images/melissa-colpitts-master-electrician-denver.jpg" width="900" height="1124" alt="Melissa Colpitts, owner and Master Electrician at Colpitts Electric"></div>
         <div>
           <span class="eyebrow">Why Colpitts</span>
           <h2>Run by someone who ran the jobs.</h2>
@@ -670,6 +702,19 @@ footer nav a:hover{color:#fff}
       </div>
     </section>
   </main>
+  <section class="footcta">
+    <div class="bg"><img src="/images/commercial-auditorium-renovation-denver-metro.jpg" width="1600" height="1200" alt="Commercial electrical project in progress in the Denver Metro area" loading="lazy"></div>
+    <div class="inner">
+      <span class="eyebrow on-dark">Have a project in mind?</span>
+      <h2>Let&rsquo;s build something great.</h2>
+      <p>Tell us what you need and where you need it.</p>
+      <div class="btns">
+        <a class="btn" href="/contact">Request a quote <svg class="arw" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="tel:+13039799422">Call (303) 979-9422</a>
+      </div>
+    </div>
+  </section>
+
   <footer class="bigfoot">
     <div class="cols">
       <div>

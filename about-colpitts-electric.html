@@ -530,6 +530,38 @@ footer nav a:hover{color:#fff}
 .bigfoot .bottom{max-width:var(--w);margin:44px auto 0;border-top:1px solid var(--line-dk);padding:20px 0 28px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.74rem;color:#6B6B76}
 @media(max-width:1000px){.bigfoot .cols{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.bigfoot{padding:40px 20px 0}.bigfoot .cols{grid-template-columns:1fr}}
+
+/* ---------- collapsible fact panel ---------- */
+.factbox{border:1px solid var(--line-dk);margin-top:26px;background:var(--ink-2)}
+section.band.tint .factbox,section.band.light .factbox{border-color:var(--line);background:var(--paper)}
+.factbox>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;font-family:var(--head);font-size:.74rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff}
+section.band.tint .factbox>summary,section.band.light .factbox>summary{color:var(--ink)}
+.factbox>summary::-webkit-details-marker{display:none}
+.factbox>summary:hover{background:rgba(124,58,237,.08)}
+.factbox>summary .hint{font-family:var(--body);font-size:.74rem;font-weight:500;letter-spacing:0;text-transform:none;color:#8A8A95}
+.factbox>summary .chev{width:26px;height:26px;border:1.5px solid var(--violet);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--violet-bright);flex-shrink:0;font-size:1rem;line-height:1;transition:transform .18s}
+.factbox[open]>summary .chev{transform:rotate(45deg)}
+.factbox[open]>summary{border-bottom:1px solid var(--line-dk)}
+section.band.tint .factbox[open]>summary,section.band.light .factbox[open]>summary{border-bottom-color:var(--line)}
+.factbox[open]>summary .hint{visibility:hidden;position:relative}
+.factbox[open]>summary .hint::after{content:"Tap to collapse";visibility:visible;position:absolute;left:0;top:0;white-space:nowrap}
+.factbox .creds{border:0;margin:0}
+.factbox .cred:last-child{border-bottom:0}
+
+.portrait{width:210px;flex-shrink:0}
+.portrait img{width:100%;height:auto;display:block;border-bottom:4px solid var(--violet)}
+@media(max-width:960px){.portrait{width:160px}}
+
+.footcta{position:relative;overflow:hidden;background:var(--ink)}
+.footcta .bg{position:absolute;inset:0;z-index:0}
+.footcta .bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.footcta .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(95deg,rgba(8,8,10,.97) 0%,rgba(8,8,10,.92) 38%,rgba(8,8,10,.55) 68%,rgba(8,8,10,.35) 100%)}
+.footcta .inner{position:relative;z-index:2;max-width:var(--w);margin:0 auto;padding:72px 40px}
+.footcta h2{margin-bottom:14px}
+.footcta p{color:#B9B9C4;margin-bottom:26px}
+.footcta .btns{display:flex;gap:14px;flex-wrap:wrap}
+.footcta+.bigfoot{border-top:2px solid var(--violet)}
+@media(max-width:700px){.footcta .inner{padding:48px 20px}}
 </style>
 </head>
 <body>
@@ -743,6 +775,19 @@ footer nav a:hover{color:#fff}
     </div>
 
   </main>
+  <section class="footcta">
+    <div class="bg"><img src="/images/commercial-auditorium-renovation-denver-metro.jpg" width="1600" height="1200" alt="Commercial electrical project in progress in the Denver Metro area" loading="lazy"></div>
+    <div class="inner">
+      <span class="eyebrow on-dark">Have a project in mind?</span>
+      <h2>Let&rsquo;s build something great.</h2>
+      <p>Tell us what you need and where you need it.</p>
+      <div class="btns">
+        <a class="btn" href="/contact">Request a quote <svg class="arw" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="tel:+13039799422">Call (303) 979-9422</a>
+      </div>
+    </div>
+  </section>
+
   <footer class="bigfoot">
     <div class="cols">
       <div>
