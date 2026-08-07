@@ -162,8 +162,8 @@ a{color:inherit;text-decoration:none}
 
 /* ---------- GREYSCALE → COLOR ON HOVER ---------- */
 .gs{overflow:hidden}
-.gs img{filter:grayscale(100%) contrast(1.06);transition:filter .45s ease,transform .7s ease}
-.gs:hover img,.gs:focus-within img{filter:grayscale(0%) contrast(1)}
+.gs img{filter:grayscale(100%) contrast(1.04) brightness(.92);transition:filter .4s ease,transform .7s ease}
+.gs:hover img,.gs:focus-within img{filter:grayscale(0%) contrast(1.06) brightness(1.12) saturate(1.12)}
 figure.gs:hover img,a.gs:hover img{transform:scale(1.03)}
 
 h1,h2,h3,h4{font-family:var(--disp);font-weight:600;text-transform:uppercase;margin:0;line-height:1.02;letter-spacing:.004em}
@@ -191,10 +191,10 @@ section.tight{padding:0}
 /* ---------- header ---------- */
 header{position:sticky;top:0;z-index:50;background:var(--ink);border-bottom:1px solid var(--line-dk)}
 header .in{max-width:var(--w);margin:0 auto;padding:16px 40px;display:flex;align-items:center;gap:26px}
-.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.brand svg{width:30px;height:30px}
-.brand b{font-family:var(--disp);font-weight:600;font-size:1.28rem;letter-spacing:.02em;line-height:.92;display:block;text-transform:uppercase}
-.brand span{display:block;font-size:.56rem;font-weight:600;letter-spacing:.44em;color:#fff;margin-top:3px}
+.brand{display:flex;align-items:center;flex-shrink:0}
+.logoimg{width:auto;height:44px;display:block}
+footer .logoimg{height:50px;margin-bottom:4px}
+@media(max-width:760px){.logoimg{height:36px}}
 nav{margin-left:auto;display:flex;align-items:center;gap:34px}
 nav a{font-size:.74rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:#D2D2D8;transition:color .18s}
 nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
@@ -230,8 +230,8 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 /* ---------- 3 image tiles ---------- */
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border-bottom:1px solid var(--line-dk)}
 .tile{position:relative;min-height:330px;display:flex;align-items:flex-end;background:var(--ink2);overflow:hidden}
-.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(.5);transition:filter .45s ease,transform .7s ease}
-.tile:hover img{filter:grayscale(0%) brightness(.62);transform:scale(1.04)}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(.42);transition:filter .4s ease,transform .7s ease}
+.tile:hover img{filter:grayscale(0%) brightness(.78) contrast(1.05) saturate(1.15);transform:scale(1.04)}
 .tile .in{position:relative;z-index:2;padding:30px 28px;width:100%}
 .tile .n{font-family:var(--disp);font-size:.86rem;color:#fff;opacity:.6;display:block;margin-bottom:auto}
 .tile h3{margin-bottom:8px}
@@ -304,8 +304,8 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 /* ---------- work cards ---------- */
 .work3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .wcard{position:relative;min-height:380px;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink2)}
-.wcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(.55);transition:filter .45s,transform .7s}
-.wcard:hover img{filter:grayscale(0%) brightness(.65);transform:scale(1.04)}
+.wcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) brightness(.48);transition:filter .4s,transform .7s}
+.wcard:hover img{filter:grayscale(0%) brightness(.8) contrast(1.05) saturate(1.15);transform:scale(1.04)}
 .wcard .in{position:relative;z-index:2;padding:26px 24px}
 .wcard h3{color:#fff;margin-bottom:7px}
 .wcard p{font-size:.84rem;color:#C3C3CA;margin:0}
@@ -354,24 +354,12 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
 
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;background:var(--violet);color:#fff;align-items:center;justify-content:center;gap:9px;padding:14px;font-size:.76rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
 @media(max-width:760px){.callbar{display:flex}body{padding-bottom:52px}}
-
-.tile{min-height:380px}
-.tile img{filter:grayscale(100%) brightness(.38)}
-.tile:hover img{filter:grayscale(0%) brightness(.5)}
-.tile::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,11,12,0) 30%,rgba(11,11,12,.88) 100%)}
-.tile .in{display:flex;flex-direction:column;height:100%;padding:28px}
-.tile .n{margin-bottom:auto;font-size:.8rem;letter-spacing:.12em}
-.wcard::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(11,11,12,0) 35%,rgba(11,11,12,.9) 100%)}
-.wcard img{filter:grayscale(100%) brightness(.45)}
-.wcard:hover img{filter:grayscale(0%) brightness(.58)}
-.statrow{gap:0 10px}
-.statrow .lab{padding-right:56px}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header><div class="in">
-  <a class="brand" href="/"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18.5" stroke="#7C3AED" stroke-width="2.6"/><path d="M20 8c-4.4 0-8 3.5-8 7.9 0 3 1.7 5.2 3.3 7 .9 1 1.4 1.9 1.5 3.1h6.4c.1-1.2.6-2.1 1.5-3.1 1.6-1.8 3.3-4 3.3-7C28 11.5 24.4 8 20 8Z" fill="#7C3AED"/><rect x="17" y="28" width="6" height="1.9" rx=".9" fill="#7C3AED"/><rect x="17.6" y="31" width="4.8" height="1.9" rx=".9" fill="#7C3AED"/><path d="M20.9 13.2 17.8 18h2.4l-1.1 3.6 3.2-4.9h-2.4l1-3.5Z" fill="#0B0B0C"/></svg><span><b>Colpitts</b><span>Electric</span></span></a>
+  <a class="brand" href="/" aria-label="Colpitts Electric home"><img src="/images/logos/colpitts-logo-white.png" alt="Colpitts Electric" class="logoimg" width="760" height="232"></a>
   <nav aria-label="Main"><a href="/commercial-electrical-services-denver" aria-current=page>Commercial</a><a href="/residential-electrician-denver">Residential</a><a href="/about-colpitts-electric">About</a><a href="/contact">Contact</a></nav>
   <a class="btn" href="/contact" style="margin-left:auto">Start a project <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
 </div></header>
@@ -384,7 +372,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <p class="lede">Electrical contracting, skilled manpower and certified small business participation for commercial construction projects in Colorado.</p>
     <a class="btn" href="/contact">Request a bid <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div></div>
-  <div class="shot gs"><img src="/images/commercial-auditorium-renovation-denver-metro.jpg" alt="Commercial electrical construction on a Denver Metro project"></div>
+  <div class="shot gs"><img src="/images/commercial-hero.jpg" alt="Commercial electrical construction on a Denver Metro project"></div>
 </div><div class="subnav"><div class="in">
   <a href="#contracting">Contracting</a><a href="#manpower">Manpower</a>
   <a href="#certifications">WOSB / EDWOSB / SBE</a><a href="#clients">Who we work with</a><a href="/contact">Request a bid</a>
@@ -398,7 +386,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <ul class="arrowlist"><li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg><span>Short-term and project-based support</span></li><li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg><span>Longer-term crew support</span></li><li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg><span>Commercial construction experience</span></li><li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg><span>Safety-focused field personnel</span></li></ul>
     <a class="btn out" href="/commercial-electrical-manpower-denver" style="margin-top:28px">Manpower details <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div>
-  <div class="shot gs"><img src="/images/commercial-electrical-rough-in-overhead-cable.jpg" alt="Electrical rough-in on a commercial project"></div>
+  <div class="shot gs"><img src="/images/manpower-field-support.jpg" alt="Electrical field support on a commercial project"></div>
 </div>
 
 <section class="light" id="certifications"><div class="wrap">
@@ -420,7 +408,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
 <footer>
   <div class="cols">
     <div>
-      <a class="brand" href="/"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18.5" stroke="#7C3AED" stroke-width="2.6"/><path d="M20 8c-4.4 0-8 3.5-8 7.9 0 3 1.7 5.2 3.3 7 .9 1 1.4 1.9 1.5 3.1h6.4c.1-1.2.6-2.1 1.5-3.1 1.6-1.8 3.3-4 3.3-7C28 11.5 24.4 8 20 8Z" fill="#7C3AED"/><rect x="17" y="28" width="6" height="1.9" rx=".9" fill="#7C3AED"/><rect x="17.6" y="31" width="4.8" height="1.9" rx=".9" fill="#7C3AED"/><path d="M20.9 13.2 17.8 18h2.4l-1.1 3.6 3.2-4.9h-2.4l1-3.5Z" fill="#0B0B0C"/></svg><span><b>Colpitts</b><span>Electric</span></span></a>
+      <a class="brand" href="/" aria-label="Colpitts Electric home"><img src="/images/logos/colpitts-logo-white.png" alt="Colpitts Electric" class="logoimg" width="760" height="232"></a>
       <p class="blurb">Commercial and residential electrical contracting in the Denver metro area.</p>
     </div>
     <div><h4>Commercial</h4><ul>
