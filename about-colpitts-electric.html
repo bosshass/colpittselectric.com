@@ -120,12 +120,26 @@
     }
   ],
   "priceRange": "$$",
-  "hasCredential": {
-    "@type": "EducationalOccupationalCredential",
-    "credentialCategory": "certification",
-    "name": "SBA 8(a) Business Development Program",
-    "recognizedBy": {"@type": "GovernmentOrganization", "name": "U.S. Small Business Administration"}
-  }
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "SBA WOSB &amp; EDWOSB certification",
+      "recognizedBy": {"@type": "GovernmentOrganization", "name": "U.S. Small Business Administration"}
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Economically-Disadvantaged Women-Owned Small Business (EDWOSB) Certification",
+      "recognizedBy": {"@type": "GovernmentOrganization", "name": "U.S. Small Business Administration"}
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Small Business Enterprise (SBE) Certification",
+      "recognizedBy": {"@type": "GovernmentOrganization", "name": "City and County of Denver"}
+    }
+  ]
 }</script>
 <style>
 :root{
@@ -465,6 +479,57 @@ footer nav a:hover{color:#fff}
 
 .wrapless{max-width:none;padding:0}
 .hero+.statbar{margin-top:0}
+
+/* ---------- breadcrumb ---------- */
+.bcrumb{position:relative;z-index:3;max-width:var(--w);margin:0 auto;padding:0 40px 14px;font-family:var(--head);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--violet-bright)}
+.bcrumb a{text-decoration:none;color:var(--violet-bright)}
+.bcrumb a:hover{color:#fff}
+.bcrumb .sep{color:#6B6B76;margin:0 8px}
+.bcrumb .here{color:#8A8A95}
+@media(max-width:700px){.bcrumb{padding:0 20px 12px}}
+
+/* ---------- credential ribbon ---------- */
+.ribbon{background:var(--ink-2);border-top:1px solid var(--line-dk);border-bottom:1px solid var(--line-dk)}
+.ribbon .inner{max-width:var(--w);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(4,1fr)}
+.rib{display:flex;align-items:center;gap:14px;padding:24px 20px;border-left:1px solid var(--line-dk)}
+.rib:first-child{border-left:0;padding-left:0}
+.rib .ring{width:40px;height:40px;border:1.5px solid var(--violet);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--violet-bright);flex-shrink:0}
+.rib b{display:block;font-family:var(--head);font-size:.8rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;line-height:1.2}
+.rib span{display:block;font-family:var(--head);font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8A8A95;margin-top:4px}
+@media(max-width:900px){.ribbon .inner{grid-template-columns:1fr 1fr;padding:0 20px}.rib:nth-child(odd){border-left:0;padding-left:0}.rib:nth-child(n+3){border-top:1px solid var(--line-dk)}}
+
+/* ---------- quote block ---------- */
+.quoteblk{background:var(--bone);color:var(--ink);padding:44px 40px;display:flex;flex-direction:column;justify-content:center}
+.quoteblk .qm{font-family:var(--disp);font-size:2.4rem;color:var(--violet);line-height:.6;margin-bottom:14px}
+.quoteblk p{font-size:1.08rem;line-height:1.5;color:var(--ink);margin-bottom:18px}
+.quoteblk .sig{margin:0 0 4px}
+.quoteblk .who{font-family:var(--head);font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-50)}
+
+/* ---------- industries row ---------- */
+.inds{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:6px}
+.ind{text-align:center;padding:8px}
+.ind .ic{color:var(--violet-deep);margin:0 auto 12px}
+.ind span{display:block;font-family:var(--head);font-size:.64rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-70);line-height:1.4}
+@media(max-width:760px){.inds{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- geo strip ---------- */
+.geostrip{border-top:1px solid var(--line);margin-top:34px;padding-top:20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-family:var(--head);font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-50)}
+.geostrip .lead{display:flex;align-items:center;gap:8px;color:var(--violet-deep)}
+.geostrip .city{color:var(--ink-70)}
+.geostrip .div{color:#C9C9D2}
+
+/* ---------- big footer ---------- */
+.bigfoot{background:var(--ink-2);border-top:1px solid var(--line-dk);padding:56px 40px 0}
+.bigfoot .cols{max-width:var(--w);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr;gap:36px}
+.bigfoot h4{font-family:var(--head);font-size:.64rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:16px}
+.bigfoot ul{list-style:none;margin:0;padding:0}
+.bigfoot li{padding:5px 0}
+.bigfoot a{text-decoration:none;font-size:.82rem;color:#8A8A95}
+.bigfoot a:hover{color:#fff}
+.bigfoot .blurb{font-size:.82rem;color:#8A8A95;line-height:1.7;margin-top:16px}
+.bigfoot .bottom{max-width:var(--w);margin:44px auto 0;border-top:1px solid var(--line-dk);padding:20px 0 28px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.74rem;color:#6B6B76}
+@media(max-width:1000px){.bigfoot .cols{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.bigfoot{padding:40px 20px 0}.bigfoot .cols{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -491,12 +556,41 @@ footer nav a:hover{color:#fff}
   <main id="main">
     <div class="wrapless">
       <div class="hero"><div class="hero-bg"><img src="/images/commercial-auditorium-renovation-denver-metro.jpg" width="1600" height="1200" alt="Commercial electrical work in progress on a Denver Metro jobsite"></div><div class="hero-copy">
-          <span class="eyebrow">About Colpitts Electric</span>
-          <h1>A Woman-Owned Electrical Contractor Serving Denver Metro</h1>
-          <p class='lede'>Colpitts Electric is a woman-owned, SBA 8(a) certified, licensed and insured electrical contractor serving commercial builders, general contractors, property managers, business owners, home builders, and homeowners throughout the Denver Metro area.</p><p class='lede'>The company was founded by Master Electrician Melissa Colpitts, who brings more than 20 years of hands-on electrical experience to every project.</p>
-          <div class="hero-cta"><a class="btn" href="/contact">Request an electrical quote <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+      <p class="bcrumb"><a href="/">Home</a><span class="sep">/</span><span class="here">About</span></p>
+          <h1>About Colpitts Electric.</h1>
+          <p class='lede'>A woman-owned commercial electrical contractor built on experience, integrity, and grit. Run by someone who ran the jobs.</p>
+          <div class="hero-cta"><a class="btn" href="/contact">Let&rsquo;s build together <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
         </div></div>
     </div>
+    
+    <div class="ribbon">
+      <div class="inner">
+        <div class="rib"><span class="ring"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 0 1 16 0"/><path d="M2 15h20"/><path d="M9 15V8a3 3 0 0 1 6 0v7"/></svg></span><span><b>Master</b><span>Electrician</span></span></div>
+        <div class="rib"><span class="ring"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="m8.5 13.5-1.5 7 5-2.5 5 2.5-1.5-7"/></svg></span><span><b>SBA WOSB</b><span>Certified</span></span></div>
+        <div class="rib"><span class="ring"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg></span><span><b>SBA WOSB</b><span>Certified</span></span></div>
+        <div class="rib"><span class="ring"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><span><b>Licensed &amp; insured</b><span>Colorado</span></span></div>
+      </div>
+    </div>
+
+<section class="band light" style="padding:0">
+      <div class="wrap" style="max-width:none;padding:0">
+        <div class="split even" style="gap:0;align-items:stretch">
+          <div style="background:var(--bone);padding:56px 40px;display:flex;flex-direction:column;justify-content:center">
+            <span class="eyebrow">Founded on experience</span>
+            <h2>The jobsite made me.</h2>
+            <p style="margin-top:18px">Colpitts Electric was founded by Melissa Colpitts, a Master Electrician and former commercial foreman and superintendent. For years she led crews, solved problems, and delivered results on complex commercial projects across Colorado.</p>
+            <p style="margin:0">Today she leads a company that brings that same field-tested leadership to every job.</p>
+          </div>
+          <div class="quoteblk">
+            <div class="qm">&ldquo;</div>
+            <p>I started in the field, earned every certification, and built this company to do things the right way. No shortcuts. No excuses. Just safe, quality work you can count on.</p>
+            <p class="sig">M. Colpitts</p>
+            <span class="who">Founder / Master Electrician</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="band">
       <div class="wrap split">
         <div><span class="eyebrow">Who we are</span><h2>Dependable work, backed by real jobsite leadership.</h2></div>
@@ -524,8 +618,8 @@ footer nav a:hover{color:#fff}
           <p class="small" style="margin:0"><b>Melissa Colpitts</b><br>Owner / Master Electrician</p>
         </div>
         <div class="creds">
-          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><span><b>SBA 8(a) certified</b><span class="sub">U.S. Small Business Administration 8(a) Business Development Program</span></span></div>
-          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg><span><b>Woman owned and operated</b><span class="sub">Licensed and insured in Colorado</span></span></div>
+          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><span><b>SBA WOSB &amp; EDWOSB certified</b><span class="sub">U.S. Small Business Administration WOSB &amp; EDWOSB certified</span></span></div>
+          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg><span><b>SBA WOSB certified</b><span class="sub">Women-Owned Small Business &mdash; U.S. Small Business Administration</span></span></div>
           <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>more than 20 years in the trade</b><span class="sub">Apprentice out of high school to Master Electrician</span></span></div>
           <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M10 21v-5h4v5"/><path d="M8 11h1M15 11h1"/></svg><span><b>5+ years in commercial jobsite leadership</b><span class="sub">Foreman and superintendent on commercial projects</span></span></div>
           <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 0 1 16 0"/><path d="M2 15h20"/><path d="M9 15V8a3 3 0 0 1 6 0v7"/></svg><span><b>Safety credentialed</b><span class="sub">OSHA 30, electrical safety, First Aid/CPR, forklift, boom lift, mini excavator, Ramset</span></span></div>
@@ -605,6 +699,35 @@ footer nav a:hover{color:#fff}
       </div>
     </section>
 
+    <section class="band light">
+      <div class="wrap split even" style="align-items:center">
+        <div>
+          <span class="eyebrow">Industries &amp; service area</span>
+          <h2>Rooted in Colorado.<br>Built for what&rsquo;s next.</h2>
+        </div>
+        <div class="inds">
+          <div class="ind"><svg class="ic" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v17"/><path d="M15 9h4a1 1 0 0 1 1 1v11"/><path d="M8 7h2M8 11h2M8 15h2"/></svg><span>Commercial<br>office</span></div>
+          <div class="ind"><svg class="ic" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h18l-1.5-5h-15L3 9Z"/><path d="M4 9v12h16V9"/><path d="M9 21v-6h6v6"/></svg><span>Retail &amp;<br>restaurants</span></div>
+          <div class="ind"><svg class="ic" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V9l9-5 9 5v12"/><path d="M7 21v-7h10v7"/><path d="M10 14v7M14 14v7"/></svg><span>Industrial &amp;<br>warehouse</span></div>
+          <div class="ind"><svg class="ic" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s8-4.5 8-10a5 5 0 0 0-8-4 5 5 0 0 0-8 4c0 5.5 8 10 8 10Z"/><path d="M12 9v5M9.5 11.5h5"/></svg><span>Healthcare &amp;<br>life science</span></div>
+          <div class="ind"><svg class="ic" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 4 2 9l10 5 10-5Z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg><span>Education &amp;<br>institutional</span></div>
+        </div>
+        <div class="geostrip" style="grid-column:1/-1">
+          <span class="lead"><svg class="" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.6"/></svg> Denver Metro</span>
+          <span class="div">|</span><span class="city">Denver</span>
+          <span class="div">|</span><span class="city">Aurora</span>
+          <span class="div">|</span><span class="city">Lakewood</span>
+          <span class="div">|</span><span class="city">Littleton</span>
+          <span class="div">|</span><span class="city">Centennial</span>
+          <span class="div">|</span><span class="city">Englewood</span>
+          <span class="div">|</span><span class="city">Cherry Hills Village</span>
+          <span class="div">|</span><span class="city">Broomfield</span>
+          <span class="div">|</span><span class="city">Castle Rock</span>
+          <span class="div">|</span><span>and surrounding areas</span>
+        </div>
+      </div>
+    </section>
+
     <section class="band tint">
       <div class="wrap">
         <span class="eyebrow">Service area</span>
@@ -615,24 +738,64 @@ footer nav a:hover{color:#fff}
     <div class="wrap" style="padding-top:44px;padding-bottom:60px">
       <div class="cta-strip">
         <p>Let&rsquo;s talk about your electrical project.</p>
-        <a class="btn" href="/contact" style="background:var(--violet-bright)">Request an electrical quote <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn" href="/contact" style="background:var(--violet-bright)">Let&rsquo;s build together <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
 
   </main>
-  <footer>
-    <a class="logo" href="/"><svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <circle cx="20" cy="20" r="18.5" stroke="#5B21B6" stroke-width="2.4"/>
-        <path d="M20 8c-4.4 0-8 3.5-8 7.9 0 3 1.7 5.2 3.3 7 .9 1 1.4 1.9 1.5 3.1h6.4c.1-1.2.6-2.1 1.5-3.1 1.6-1.8 3.3-4 3.3-7C28 11.5 24.4 8 20 8Z" fill="#5B21B6"/>
-        <rect x="17" y="28" width="6" height="1.9" rx=".9" fill="#5B21B6"/>
-        <rect x="17.6" y="31" width="4.8" height="1.9" rx=".9" fill="#5B21B6"/>
-        <path d="M20.9 13.2 17.8 18h2.4l-1.1 3.6 3.2-4.9h-2.4l1-3.5Z" fill="#fff"/>
-      </svg><span class="logo-txt">COLPITTS<span>ELECTRIC</span></span></a>
-    <span class="small" style="max-width:22ch;line-height:1.4">Powering spaces.<br>Supporting people.</span>
-    <nav aria-label="Footer"><a href="/commercial-electrical-services-denver">Commercial</a><a href="/residential-electrician-denver">Residential</a><a href="/commercial-electrical-manpower-denver">Manpower</a><a href="/about-colpitts-electric">About</a><a href="/contact">Contact</a></nav>
-    <span>Denver, Colorado<br>Serving the Denver Metro area &middot; <a href="tel:+13039799422" style="text-decoration:none;font-weight:600;color:var(--violet)">(303) 979-9422</a></span>
-    <span class="foot-lic">Licensed &amp; insured</span>
-    <span>&copy; 2026 Colpitts Electric LLC. All rights reserved.</span>
+  <footer class="bigfoot">
+    <div class="cols">
+      <div>
+        <a class="logo" href="/" aria-label="Colpitts Electric home">
+          <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18.5" stroke="#7C3AED" stroke-width="2.4"/><path d="M20 8c-4.4 0-8 3.5-8 7.9 0 3 1.7 5.2 3.3 7 .9 1 1.4 1.9 1.5 3.1h6.4c.1-1.2.6-2.1 1.5-3.1 1.6-1.8 3.3-4 3.3-7C28 11.5 24.4 8 20 8Z" fill="#7C3AED"/><rect x="17" y="28" width="6" height="1.9" rx=".9" fill="#7C3AED"/><rect x="17.6" y="31" width="4.8" height="1.9" rx=".9" fill="#7C3AED"/><path d="M20.9 13.2 17.8 18h2.4l-1.1 3.6 3.2-4.9h-2.4l1-3.5Z" fill="#0A0A0C"/></svg>
+          <span class="logo-txt">COLPITTS<span>ELECTRIC</span></span>
+        </a>
+        <p class="blurb">Commercial electrical contracting.<br>Grounded in experience.<br>Driven by integrity.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/commercial-electrical-services-denver">New construction</a></li>
+          <li><a href="/commercial-electrical-services-denver">Tenant improvements</a></li>
+          <li><a href="/commercial-electrical-services-denver">Commercial lighting</a></li>
+          <li><a href="/residential-electrician-denver">Service + maintenance</a></li>
+          <li><a href="/commercial-electrical-services-denver">Distribution + panels</a></li>
+          <li><a href="/commercial-electrical-manpower-denver">Electrical manpower</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about-colpitts-electric">About</a></li>
+          <li><a href="/commercial-electrical-services-denver">Our process</a></li>
+          <li><a href="/commercial-electrical-manpower-denver">Certifications</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service area</h4>
+        <ul>
+          <li><a href="/commercial-electrical-services-denver">Denver Metro</a></li>
+          <li><a href="/commercial-electrical-services-denver">Cherry Hills Village</a></li>
+          <li><a href="/commercial-electrical-services-denver">Englewood</a></li>
+          <li><a href="/commercial-electrical-services-denver">Colorado Front Range</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Let's connect</h4>
+        <ul>
+          <li><a href="tel:+13039799422">(303) 979-9422</a></li>
+          <li><a href="mailto:melissa@colpittselectric.com">melissa@colpittselectric.com</a></li>
+          <li style="color:#8A8A95;font-size:.82rem;padding-top:10px">Denver, Colorado<br>Serving the Denver Metro area</li>
+          <li style="color:#8A8A95;font-size:.82rem">Mon&ndash;Fri, 9:00am&ndash;5:00pm</li>
+        </ul>
+        <p class="blurb" style="margin-top:14px"><span class="foot-lic">SBA WOSB &amp; EDWOSB certified &middot; Licensed &amp; insured</span></p>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 Colpitts Electric LLC. All rights reserved.</span>
+      <span>Proudly serving Denver Metro &middot; Denver &middot; Aurora &middot; Lakewood &middot; Littleton &middot; Centennial &middot; Englewood &middot; Cherry Hills Village &middot; Highlands Ranch &middot; Broomfield &middot; Castle Rock</span>
+    </div>
   </footer>
   </div>
 </div>

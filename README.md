@@ -80,21 +80,45 @@ amber highlight so it's visible on the page. Find them all:
    crew size or another company's branding creates real exposure in a
    prequalification or size/capability challenge.
 
-## CERTIFICATIONS — two separate credentials
+## CERTIFICATIONS — CORRECTED 2026-08-07
 
-Colpitts Electric appears to hold TWO distinct certifications. They are different
-programs, different agencies, and serve different buyers. Do not conflate them:
+Source of truth: SBA Small Business Search profile for COLPITTS ELECTRIC LLC.
 
-1. SBA 8(a) — U.S. Small Business Administration, federal. Supports 8(a)
-   set-aside and sole-source federal contracting. Currently on the site.
-2. MWBE — City and County of Denver (Division of Small Business Opportunity).
-   Supports MWBE participation on City-funded projects. NOT currently on the
-   site — it was removed earlier when it couldn't be verified.
+HELD (verified on the SBA record, now on the site):
+- WOSB   — Women-Owned Small Business. Certified 4/5/2023.
+- EDWOSB — Economically-Disadvantaged Women-Owned Small Business. Certified 4/5/2023.
+- UEI PL2PBG5ZPM31 | CAGE 9D5M7 | Primary NAICS 238210 | SAM.gov Active
 
-VERIFY AND RESTORE the MWBE credential: exact designation (MBE, WBE, or MWBE —
-they are not interchangeable), certifying agency, certificate number, and
-expiration. Then add it to the Manpower and Commercial pages alongside 8(a).
-This is the credential that won the Convention Center work, so it matters.
+NOT HELD — REMOVED FROM THE ENTIRE SITE:
+- SBA 8(a). It was added earlier on the strength of an 8(a) decal image, but the
+  SBA profile lists only WOSB and EDWOSB. Claiming 8(a) without certification is
+  a misrepresentation with real consequences under 13 CFR 124 and the False
+  Claims Act. Do NOT re-add it unless the SBA profile shows it.
+  If an 8(a) application is in progress, the site may say nothing until awarded.
+
+SELF-CERTIFIED IN SAM.gov (attested, NOT vetted by SBA — do not present as
+"certified" on the site):
+- Self-Certified Small Disadvantaged Business
+- DOT Certified DBE  <-- if a real CDOT DBE certification exists, get the
+  certificate and it CAN be published; SAM self-attestation alone cannot.
+
+LOCAL — VERIFIED via B2Gnow certified profile (generated 8/7/2026):
+- SBE (Small Business Enterprise) — City and County of Denver.
+  B2G Vendor ID 21550341. NAICS 238210.
+  This is what got Colpitts onto the Colorado Convention Center via Weifield —
+  NOT MWBE. All MWBE language has been removed sitewide; the case study now
+  correctly says Denver SBE participation.
+
+  Note: SBE is a size/local program, not a minority or gender program. Denver
+  also runs MBE/WBE/DBE programs separately. If Colpitts later certifies as WBE
+  or DBE with Denver, add those separately — do not conflate them with SBE.
+
+ALSO NOTE — SAM.gov data errors worth fixing:
+- Entity structure reads "Partnership or Limited Liability Partnership" but the
+  company is an LLC.
+- Address on SAM is the home address (public there; deliberately kept off the site).
+- Capabilities narrative and capabilities statement link are both blank. Filling
+  these improves discoverability for contracting officers searching DSBS.
 
 ## Case studies page (/case-studies) — DRAFT
 

@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Electrical Manpower Denver | SBA 8(a) Electrical Subcontractor | Colpitts Electric</title>
-<meta name="description" content="Skilled commercial electrical manpower in Denver Metro. SBA 8(a) certified electrical subcontractor supporting general contractors, builders, and federal primes.">
+<title>Electrical Manpower Denver | SBA WOSB Electrical Subcontractor | Colpitts Electric</title>
+<meta name="description" content="Skilled commercial electrical manpower in Denver Metro. SBA WOSB certified electrical subcontractor supporting general contractors, builders, and federal primes.">
 <link rel="canonical" href="https://colpittselectric.com/commercial-electrical-manpower-denver">
-<meta property="og:title" content="Electrical Manpower Denver | SBA 8(a) Electrical Subcontractor | Colpitts Electric">
-<meta property="og:description" content="Skilled commercial electrical manpower in Denver Metro. SBA 8(a) certified electrical subcontractor supporting general contractors, builders, and federal primes.">
+<meta property="og:title" content="Electrical Manpower Denver | SBA WOSB Electrical Subcontractor | Colpitts Electric">
+<meta property="og:description" content="Skilled commercial electrical manpower in Denver Metro. SBA WOSB certified electrical subcontractor supporting general contractors, builders, and federal primes.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://colpittselectric.com/commercial-electrical-manpower-denver">
 <meta property="og:site_name" content="Colpitts Electric LLC">
@@ -120,12 +120,26 @@
     }
   ],
   "priceRange": "$$",
-  "hasCredential": {
-    "@type": "EducationalOccupationalCredential",
-    "credentialCategory": "certification",
-    "name": "SBA 8(a) Business Development Program",
-    "recognizedBy": {"@type": "GovernmentOrganization", "name": "U.S. Small Business Administration"}
-  }
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "SBA WOSB &amp; EDWOSB certification",
+      "recognizedBy": {"@type": "GovernmentOrganization", "name": "U.S. Small Business Administration"}
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Economically-Disadvantaged Women-Owned Small Business (EDWOSB) Certification",
+      "recognizedBy": {"@type": "GovernmentOrganization", "name": "U.S. Small Business Administration"}
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Small Business Enterprise (SBE) Certification",
+      "recognizedBy": {"@type": "GovernmentOrganization", "name": "City and County of Denver"}
+    }
+  ]
 }</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -157,10 +171,10 @@
     },
     {
       "@type": "Question",
-      "name": "Can Colpitts Electric support 8(a) or small business subcontracting goals?",
+      "name": "Can Colpitts Electric support WOSB or small business subcontracting goals?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Colpitts Electric holds SBA 8(a) certification, which supports 8(a) set-aside and sole-source awards and can count toward small disadvantaged business subcontracting goals. Applicability depends on the solicitation, NAICS code, and funding source, so confirm credit with your contracting officer."
+        "text": "Colpitts Electric holds SBA WOSB and EDWOSB certification, which supports WOSB and EDWOSB set-aside contracting in designated NAICS codes and can count toward small business subcontracting goals. Applicability depends on the solicitation, NAICS code, and funding source, so confirm credit with your contracting officer."
       }
     },
     {
@@ -511,6 +525,57 @@ footer nav a:hover{color:#fff}
 
 .wrapless{max-width:none;padding:0}
 .hero+.statbar{margin-top:0}
+
+/* ---------- breadcrumb ---------- */
+.bcrumb{position:relative;z-index:3;max-width:var(--w);margin:0 auto;padding:0 40px 14px;font-family:var(--head);font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--violet-bright)}
+.bcrumb a{text-decoration:none;color:var(--violet-bright)}
+.bcrumb a:hover{color:#fff}
+.bcrumb .sep{color:#6B6B76;margin:0 8px}
+.bcrumb .here{color:#8A8A95}
+@media(max-width:700px){.bcrumb{padding:0 20px 12px}}
+
+/* ---------- credential ribbon ---------- */
+.ribbon{background:var(--ink-2);border-top:1px solid var(--line-dk);border-bottom:1px solid var(--line-dk)}
+.ribbon .inner{max-width:var(--w);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(4,1fr)}
+.rib{display:flex;align-items:center;gap:14px;padding:24px 20px;border-left:1px solid var(--line-dk)}
+.rib:first-child{border-left:0;padding-left:0}
+.rib .ring{width:40px;height:40px;border:1.5px solid var(--violet);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--violet-bright);flex-shrink:0}
+.rib b{display:block;font-family:var(--head);font-size:.8rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;line-height:1.2}
+.rib span{display:block;font-family:var(--head);font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8A8A95;margin-top:4px}
+@media(max-width:900px){.ribbon .inner{grid-template-columns:1fr 1fr;padding:0 20px}.rib:nth-child(odd){border-left:0;padding-left:0}.rib:nth-child(n+3){border-top:1px solid var(--line-dk)}}
+
+/* ---------- quote block ---------- */
+.quoteblk{background:var(--bone);color:var(--ink);padding:44px 40px;display:flex;flex-direction:column;justify-content:center}
+.quoteblk .qm{font-family:var(--disp);font-size:2.4rem;color:var(--violet);line-height:.6;margin-bottom:14px}
+.quoteblk p{font-size:1.08rem;line-height:1.5;color:var(--ink);margin-bottom:18px}
+.quoteblk .sig{margin:0 0 4px}
+.quoteblk .who{font-family:var(--head);font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-50)}
+
+/* ---------- industries row ---------- */
+.inds{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:6px}
+.ind{text-align:center;padding:8px}
+.ind .ic{color:var(--violet-deep);margin:0 auto 12px}
+.ind span{display:block;font-family:var(--head);font-size:.64rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-70);line-height:1.4}
+@media(max-width:760px){.inds{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- geo strip ---------- */
+.geostrip{border-top:1px solid var(--line);margin-top:34px;padding-top:20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;font-family:var(--head);font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-50)}
+.geostrip .lead{display:flex;align-items:center;gap:8px;color:var(--violet-deep)}
+.geostrip .city{color:var(--ink-70)}
+.geostrip .div{color:#C9C9D2}
+
+/* ---------- big footer ---------- */
+.bigfoot{background:var(--ink-2);border-top:1px solid var(--line-dk);padding:56px 40px 0}
+.bigfoot .cols{max-width:var(--w);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr;gap:36px}
+.bigfoot h4{font-family:var(--head);font-size:.64rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#fff;margin-bottom:16px}
+.bigfoot ul{list-style:none;margin:0;padding:0}
+.bigfoot li{padding:5px 0}
+.bigfoot a{text-decoration:none;font-size:.82rem;color:#8A8A95}
+.bigfoot a:hover{color:#fff}
+.bigfoot .blurb{font-size:.82rem;color:#8A8A95;line-height:1.7;margin-top:16px}
+.bigfoot .bottom{max-width:var(--w);margin:44px auto 0;border-top:1px solid var(--line-dk);padding:20px 0 28px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.74rem;color:#6B6B76}
+@media(max-width:1000px){.bigfoot .cols{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.bigfoot{padding:40px 20px 0}.bigfoot .cols{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -537,17 +602,28 @@ footer nav a:hover{color:#fff}
   <main id="main">
     <div class="wrapless">
       <div class="hero"><div class="hero-bg"><img src="/images/commercial-auditorium-renovation-denver-metro.jpg" width="1600" height="1200" alt="Commercial electrical work in progress on a Denver Metro jobsite"></div><div class="hero-copy">
+      <p class="bcrumb"><a href="/">Home</a><span class="sep">/</span><span class="here">Manpower</span></p>
           <span class="eyebrow">Commercial electrical manpower</span>
           <h1>Commercial Electrical Manpower in Denver Metro</h1>
           <p class='lede'>Construction schedules change. Scopes expand. Deadlines move forward. Crew availability shifts and multiple projects begin competing for the same workers.</p><p class='lede'>Colpitts Electric provides commercial electrical manpower and subcontracting support for general contractors, electrical contractors, commercial builders, project managers, and construction partners throughout the Denver Metro area.</p>
           <div class="hero-cta"><a class="btn" href="/contact">Request electrical manpower <svg class="arw" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="/commercial-electrical-services-denver">See commercial services </a></div>
         </div></div>
     </div>
-    <section class="band">
+    
+    <div class="ribbon">
+      <div class="inner">
+        <div class="rib"><span class="ring"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15a8 8 0 0 1 16 0"/><path d="M2 15h20"/><path d="M9 15V8a3 3 0 0 1 6 0v7"/></svg></span><span><b>Master</b><span>Electrician</span></span></div>
+        <div class="rib"><span class="ring"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.5"/><path d="m8.5 13.5-1.5 7 5-2.5 5 2.5-1.5-7"/></svg></span><span><b>SBA WOSB</b><span>Certified</span></span></div>
+        <div class="rib"><span class="ring"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg></span><span><b>SBA WOSB</b><span>Certified</span></span></div>
+        <div class="rib"><span class="ring"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span><span><b>Licensed &amp; insured</b><span>Colorado</span></span></div>
+      </div>
+    </div>
+
+<section class="band">
       <div class="wrap">
         <div class="warn">
           <b>Internal note &mdash; remove this block before publishing</b>
-          <p>The certification table below still needs the case/certificate number, program entry and exit dates, and approved NAICS codes taken from the SBA 8(a) award letter or the SAM.gov / DSBS record. Everything else on this page reflects the 8(a) certification as supplied.</p>
+          <p>The certification table below still needs the case/certificate number, program entry and exit dates, and approved NAICS codes taken from the SBA WOSB award letter or the SAM.gov / DSBS record. Certifications on this page reflect the SBA record: WOSB and EDWOSB, both certified 4/5/2023. The 8(a) program is NOT held and all such claims were removed sitewide on 2026-08-07.</p>
           <p>Also confirm that supplying labor to another contractor&rsquo;s project is covered under Colorado electrical licensing and supervision rules, and that workers&rsquo; comp and general liability respond to that arrangement.</p>
         </div>
       </div>
@@ -556,25 +632,29 @@ footer nav a:hover{color:#fff}
     <section class="band violet">
       <div class="wrap split">
         <div>
-          <span class="eyebrow on-dark">SBA 8(a) certified</span>
-          <h2>A federally certified 8(a) electrical contractor.</h2>
-          <img src="/images/sba-8a-certified-electrical-contractor.jpg" width="420" height="525" alt="U.S. Small Business Administration 8(a) Certified" style="width:150px;height:auto;margin-top:24px;background:#fff;padding:10px">
+          <span class="eyebrow on-dark">SBA WOSB certified</span>
+          <h2>A federally certified woman-owned electrical contractor.</h2>
+          <div style="display:flex;gap:14px;margin-top:24px">
+            <img src="/images/sba-8a-certified-electrical-contractor.jpg" width="520" height="650" alt="U.S. Small Business Administration WOSB Certified" style="width:120px;height:auto;background:#fff;padding:9px">
+            <img src="/images/sba-wosb-certified-electrical-contractor.jpg" width="520" height="650" alt="U.S. Small Business Administration WOSB Certified" style="width:120px;height:auto;background:#fff;padding:9px">
+          </div>
         </div>
         <div>
-          <p>Colpitts Electric is certified under the U.S. Small Business Administration&rsquo;s 8(a) Business Development Program &mdash; a federal certification for small businesses owned and controlled by socially and economically disadvantaged individuals.</p>
-          <p>For federal agencies and prime contractors, that means Colpitts Electric is eligible for 8(a) set-aside and sole-source contracting, and subcontracted work can count toward small disadvantaged business subcontracting goals under an approved plan.</p>
+          <p>Colpitts Electric is certified by the U.S. Small Business Administration as both a Women-Owned Small Business (WOSB) and an Economically-Disadvantaged Women-Owned Small Business (EDWOSB), certified since April 5, 2023 &mdash; and is certified by the City and County of Denver as a Small Business Enterprise (SBE).</p>
+          <p>For federal agencies and prime contractors, that means Colpitts Electric is eligible for WOSB and EDWOSB set-aside contracting in designated NAICS codes, and subcontracted work can count toward small business subcontracting goals under an approved plan.</p>
           <p>Certification is only part of what we bring to the project. Our value is backed by experienced commercial electrical leadership, jobsite coordination, safety training, and workers who understand that their performance affects the entire construction schedule.</p>
           <div class="cert">
-            <div><dt>Program</dt><dd>SBA 8(a) Business Development</dd></div>
+            <div><dt>Program</dt><dd>SBA WOSB Business Development</dd></div>
             <div><dt>Certifying agency</dt><dd>U.S. Small Business Administration</dd></div>
-            <div><dt>Case / certificate number</dt><dd><span class="tbd">add from award letter</span></dd></div>
-            <div><dt>Program entry date</dt><dd><span class="tbd">add</span></dd></div>
-            <div><dt>Program exit date</dt><dd><span class="tbd">add (9-year term)</span></dd></div>
-            <div><dt>Approved NAICS codes</dt><dd><span class="tbd">e.g. 238210</span></dd></div>
-            <div><dt>UEI / CAGE code</dt><dd><span class="tbd">add from SAM.gov</span></dd></div>
+            <div><dt>UEI</dt><dd>PL2PBG5ZPM31</dd></div>
+            <div><dt>CAGE code</dt><dd>9D5M7</dd></div>
+            <div><dt>Certified since</dt><dd>April 5, 2023</dd></div>
+            <div><dt>Primary NAICS</dt><dd>238210 &mdash; Electrical Contractors and Other Wiring Installation Contractors</dd></div>
+            <div><dt>SAM.gov registration</dt><dd>Active</dd></div>
+            
             <div><dt>Ownership</dt><dd>Woman owned and operated</dd></div>
           </div>
-          <p class="note" style="color:#C9B8F2">Confirm 8(a) eligibility and set-aside applicability for your specific solicitation with your contracting officer.</p>
+          <p class="note" style="color:#C9B8F2">Confirm WOSB/EDWOSB set-aside applicability for your specific solicitation with your contracting officer.</p>
         </div>
       </div>
     </section>
@@ -621,7 +701,7 @@ footer nav a:hover{color:#fff}
           <h2>Call us when the schedule is moving faster than the crew.</h2>
         </div>
         <div>
-          <ul class="xlist one"><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Preparing for a critical project milestone</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Working through an accelerated construction schedule</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Experiencing an unexpected labor shortage</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Starting work before your full crew is available</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Managing multiple active commercial projects</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Completing a large rough-in or trim phase</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Working through inspection corrections</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Closing out a punch list</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Pursuing 8(a) or small disadvantaged business goals</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Looking for a dependable electrical subcontracting partner</span></li></ul>
+          <ul class="xlist one"><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Preparing for a critical project milestone</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Working through an accelerated construction schedule</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Experiencing an unexpected labor shortage</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Starting work before your full crew is available</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Managing multiple active commercial projects</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Completing a large rough-in or trim phase</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Working through inspection corrections</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Closing out a punch list</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Pursuing WOSB, EDWOSB, or small business participation goals</span></li><li><svg class="chk" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9 17.5 20 6.5"/></svg><span>Looking for a dependable electrical subcontracting partner</span></li></ul>
         </div>
       </div>
     </section>
@@ -654,13 +734,13 @@ footer nav a:hover{color:#fff}
         <div>
           <span class="eyebrow">Federal and public-sector work</span>
           <h2>Built to work inside a federal contract.</h2>
-          <p class="lede" style="margin-top:16px">8(a) certification opens contracting paths that are closed to most small electrical subcontractors.</p>
+          <p class="lede" style="margin-top:16px">WOSB and EDWOSB certification opens contracting paths that are closed to most small electrical subcontractors.</p>
         </div>
         <div class="creds">
-          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><span><b>8(a) set-aside eligible</b><span class="sub">Competitive 8(a) solicitations within approved NAICS codes</span></span></div>
-          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span><b>Sole-source award eligible</b><span class="sub">Streamlined awards without full competition, subject to thresholds</span></span></div>
-          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M17 5.2a3.5 3.5 0 0 1 0 6.6M18 14.5a7 7 0 0 1 4 6.5"/></svg><span><b>Subcontracting plan credit</b><span class="sub">Work may count toward SDB goals under an approved plan</span></span></div>
-          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg><span><b>Woman owned and operated</b><span class="sub">Led by a Master Electrician with commercial jobsite leadership</span></span></div>
+          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg><span><b>WOSB &amp; EDWOSB set-aside eligible</b><span class="sub">Designated NAICS codes, including 238210</span></span></div>
+          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span><b>Denver SBE certified</b><span class="sub">City and County of Denver Small Business Enterprise &mdash; supports City participation requirements</span></span></div>
+          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M17 5.2a3.5 3.5 0 0 1 0 6.6M18 14.5a7 7 0 0 1 4 6.5"/></svg><span><b>Subcontracting plan credit</b><span class="sub">Work may count toward small business goals under an approved plan</span></span></div>
+          <div class="cred"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8M9 18h6"/></svg><span><b>SBA WOSB certified</b><span class="sub">Eligible for WOSB set-aside contracting in designated NAICS codes</span></span></div>
         </div>
       </div>
     </section>
@@ -669,7 +749,7 @@ footer nav a:hover{color:#fff}
       <div class="wrap">
         <span class="eyebrow">Electrical manpower FAQs</span>
         <h2>Common questions</h2>
-        <div class="faq"><details><summary>What type of companies do you provide electrical manpower for?</summary><div class="a"><p>Colpitts Electric works with general contractors, electrical contractors, commercial builders, project managers, property owners, and other construction partners throughout the Denver Metro area.</p></div></details><details><summary>Can you provide electrical workers for only one phase of a project?</summary><div class="a"><p>Yes. Availability may be structured around a specific project phase, assigned scope, milestone, or period of increased labor demand.</p></div></details><details><summary>Do you provide electrical supervision?</summary><div class="a"><p>Supervision requirements should be discussed before scheduling. Tell us whether your team will provide day-to-day direction or whether experienced field leadership is part of the requested scope.</p></div></details><details><summary>Can Colpitts Electric support 8(a) or small business subcontracting goals?</summary><div class="a"><p>Colpitts Electric holds SBA 8(a) certification, which supports 8(a) set-aside and sole-source awards and can count toward small disadvantaged business subcontracting goals. Applicability depends on the solicitation, NAICS code, and funding source, so confirm credit with your contracting officer.</p></div></details><details><summary>What information do you need to evaluate a manpower request?</summary><div class="a"><p>Provide the project location, electrical scope, number of workers needed, expected start date, anticipated duration, work schedule, licensing requirements, safety requirements, and whether supervision is needed.</p></div></details></div>
+        <div class="faq"><details><summary>What type of companies do you provide electrical manpower for?</summary><div class="a"><p>Colpitts Electric works with general contractors, electrical contractors, commercial builders, project managers, property owners, and other construction partners throughout the Denver Metro area.</p></div></details><details><summary>Can you provide electrical workers for only one phase of a project?</summary><div class="a"><p>Yes. Availability may be structured around a specific project phase, assigned scope, milestone, or period of increased labor demand.</p></div></details><details><summary>Do you provide electrical supervision?</summary><div class="a"><p>Supervision requirements should be discussed before scheduling. Tell us whether your team will provide day-to-day direction or whether experienced field leadership is part of the requested scope.</p></div></details><details><summary>Can Colpitts Electric support WOSB or small business subcontracting goals?</summary><div class="a"><p>Colpitts Electric holds SBA WOSB and EDWOSB certification, which supports WOSB and EDWOSB set-aside contracting in designated NAICS codes and can count toward small business subcontracting goals. Applicability depends on the solicitation, NAICS code, and funding source, so confirm credit with your contracting officer.</p></div></details><details><summary>What information do you need to evaluate a manpower request?</summary><div class="a"><p>Provide the project location, electrical scope, number of workers needed, expected start date, anticipated duration, work schedule, licensing requirements, safety requirements, and whether supervision is needed.</p></div></details></div>
       </div>
     </section>
 
@@ -695,19 +775,59 @@ footer nav a:hover{color:#fff}
     </div>
 
   </main>
-  <footer>
-    <a class="logo" href="/"><svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-        <circle cx="20" cy="20" r="18.5" stroke="#5B21B6" stroke-width="2.4"/>
-        <path d="M20 8c-4.4 0-8 3.5-8 7.9 0 3 1.7 5.2 3.3 7 .9 1 1.4 1.9 1.5 3.1h6.4c.1-1.2.6-2.1 1.5-3.1 1.6-1.8 3.3-4 3.3-7C28 11.5 24.4 8 20 8Z" fill="#5B21B6"/>
-        <rect x="17" y="28" width="6" height="1.9" rx=".9" fill="#5B21B6"/>
-        <rect x="17.6" y="31" width="4.8" height="1.9" rx=".9" fill="#5B21B6"/>
-        <path d="M20.9 13.2 17.8 18h2.4l-1.1 3.6 3.2-4.9h-2.4l1-3.5Z" fill="#fff"/>
-      </svg><span class="logo-txt">COLPITTS<span>ELECTRIC</span></span></a>
-    <span class="small" style="max-width:22ch;line-height:1.4">Powering spaces.<br>Supporting people.</span>
-    <nav aria-label="Footer"><a href="/commercial-electrical-services-denver">Commercial</a><a href="/residential-electrician-denver">Residential</a><a href="/commercial-electrical-manpower-denver">Manpower</a><a href="/about-colpitts-electric">About</a><a href="/contact">Contact</a></nav>
-    <span>Denver, Colorado<br>Serving the Denver Metro area &middot; <a href="tel:+13039799422" style="text-decoration:none;font-weight:600;color:var(--violet)">(303) 979-9422</a></span>
-    <span class="foot-lic">Licensed &amp; insured</span>
-    <span>&copy; 2026 Colpitts Electric LLC. All rights reserved.</span>
+  <footer class="bigfoot">
+    <div class="cols">
+      <div>
+        <a class="logo" href="/" aria-label="Colpitts Electric home">
+          <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="18.5" stroke="#7C3AED" stroke-width="2.4"/><path d="M20 8c-4.4 0-8 3.5-8 7.9 0 3 1.7 5.2 3.3 7 .9 1 1.4 1.9 1.5 3.1h6.4c.1-1.2.6-2.1 1.5-3.1 1.6-1.8 3.3-4 3.3-7C28 11.5 24.4 8 20 8Z" fill="#7C3AED"/><rect x="17" y="28" width="6" height="1.9" rx=".9" fill="#7C3AED"/><rect x="17.6" y="31" width="4.8" height="1.9" rx=".9" fill="#7C3AED"/><path d="M20.9 13.2 17.8 18h2.4l-1.1 3.6 3.2-4.9h-2.4l1-3.5Z" fill="#0A0A0C"/></svg>
+          <span class="logo-txt">COLPITTS<span>ELECTRIC</span></span>
+        </a>
+        <p class="blurb">Commercial electrical contracting.<br>Grounded in experience.<br>Driven by integrity.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/commercial-electrical-services-denver">New construction</a></li>
+          <li><a href="/commercial-electrical-services-denver">Tenant improvements</a></li>
+          <li><a href="/commercial-electrical-services-denver">Commercial lighting</a></li>
+          <li><a href="/residential-electrician-denver">Service + maintenance</a></li>
+          <li><a href="/commercial-electrical-services-denver">Distribution + panels</a></li>
+          <li><a href="/commercial-electrical-manpower-denver">Electrical manpower</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about-colpitts-electric">About</a></li>
+          <li><a href="/commercial-electrical-services-denver">Our process</a></li>
+          <li><a href="/commercial-electrical-manpower-denver">Certifications</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service area</h4>
+        <ul>
+          <li><a href="/commercial-electrical-services-denver">Denver Metro</a></li>
+          <li><a href="/commercial-electrical-services-denver">Cherry Hills Village</a></li>
+          <li><a href="/commercial-electrical-services-denver">Englewood</a></li>
+          <li><a href="/commercial-electrical-services-denver">Colorado Front Range</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Let's connect</h4>
+        <ul>
+          <li><a href="tel:+13039799422">(303) 979-9422</a></li>
+          <li><a href="mailto:melissa@colpittselectric.com">melissa@colpittselectric.com</a></li>
+          <li style="color:#8A8A95;font-size:.82rem;padding-top:10px">Denver, Colorado<br>Serving the Denver Metro area</li>
+          <li style="color:#8A8A95;font-size:.82rem">Mon&ndash;Fri, 9:00am&ndash;5:00pm</li>
+        </ul>
+        <p class="blurb" style="margin-top:14px"><span class="foot-lic">SBA WOSB &amp; EDWOSB certified &middot; Licensed &amp; insured</span></p>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>&copy; 2026 Colpitts Electric LLC. All rights reserved.</span>
+      <span>Proudly serving Denver Metro &middot; Denver &middot; Aurora &middot; Lakewood &middot; Littleton &middot; Centennial &middot; Englewood &middot; Cherry Hills Village &middot; Highlands Ranch &middot; Broomfield &middot; Castle Rock</span>
+    </div>
   </footer>
   </div>
 </div>
