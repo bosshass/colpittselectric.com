@@ -201,6 +201,16 @@ records to Google.
 
 ## AI IMAGES — REMOVED
 
+2026-08-19: about-melissa-hero.jpg was ALSO a stock/AI image — a generic woman in
+a hard hat, not Melissa — and it was published as the About page hero with alt
+text naming her. DELETED. The About hero is now
+commercial-electrician-installation-denver.jpg, a real Colpitts electrician on a
+real jobsite, with alt text that does NOT claim the person is Melissa. The real
+studio headshot (melissa-colpitts-portrait.jpg) remains further down the page.
+Lesson: check every remaining "melissa-*" filename against the actual image —
+the filename is not evidence of who is in the photo.
+
+
 melissa-colpitts-electrical-foreman-jobsite-briefing.jpg was an AI-generated
 image (two figures from behind in branded Colpitts apparel). It was saved under a
 wrong filename and reached About, Commercial, Manpower and Home before being

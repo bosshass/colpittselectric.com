@@ -164,6 +164,7 @@ a{color:inherit;text-decoration:none}
 .gs{overflow:hidden}
 img{image-rendering:auto}
 .gs img{filter:grayscale(100%) contrast(1.04) brightness(.92);transition:filter .4s ease,transform .7s ease}
+.gs.lit img{filter:grayscale(0%) contrast(1.06) brightness(1.12) saturate(1.12)}
 .gs:hover img,.gs:focus-within img{filter:grayscale(0%) contrast(1.06) brightness(1.12) saturate(1.12)}
 figure.gs:hover img,a.gs:hover img{transform:scale(1.03)}
 
@@ -378,7 +379,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <p class="lede">Colpitts Electric is a woman-owned electrical contractor serving commercial and residential customers in the Denver metro area.</p>
     <a class="btn" href="/contact">Contact us <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div></div>
-  <div class="shot gs"><img src="/images/about-melissa-hero.jpg" alt="Melissa Colpitts, Master Electrician and owner of Colpitts Electric"></div>
+  <div class="shot gs"><picture><source srcset="/images/commercial-electrician-installation-denver.webp" type="image/webp"><img src="/images/commercial-electrician-installation-denver.jpg" width="1600" height="1200" fetchpriority="high" alt="A Colpitts Electric electrician running MC cable on a commercial jobsite in the Denver metro area"></picture></div>
 </div><section class="light"><div class="wrap">
   <div class="feat" style="background:none">
     <div class="copy" style="padding:0 56px 0 0">
@@ -431,5 +432,23 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
   </div>
 </footer>
 <a class="callbar" href="tel:+13039799422">Call (303) 979-9422</a>
+<script>
+/* Grayscale-to-color reveal. Desktop uses :hover; touch devices light up on
+   scroll (>=60% visible) and on tap. */
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.gs'));
+  if(!els.length)return;
+  els.forEach(function(el){
+    if(el.tagName==='A'||el.closest('a'))return;
+    el.addEventListener('click',function(){el.classList.toggle('lit');});
+  });
+  if(!window.IntersectionObserver)return;
+  if(window.matchMedia&&window.matchMedia('(hover:hover)').matches)return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){e.target.classList.toggle('lit',e.intersectionRatio>=0.6);});
+  },{threshold:[0,0.6,1]});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
 </body>
 </html>
