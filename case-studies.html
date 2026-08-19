@@ -440,6 +440,11 @@ section.band.tint .work figcaption,section.band.light .work figcaption,section.b
 section.band.tint .work figcaption b,section.band.light .work figcaption b{color:var(--ink)}
 @media(max-width:860px){.work,.imgrow{grid-template-columns:1fr}.work img,.imgrow img{height:240px}}
 
+.work figure,.imgrow figure{position:relative}
+.work img,.imgrow img{filter:grayscale(100%) contrast(1.04) brightness(.94);transition:filter .4s ease,transform .7s ease}
+.work figure:hover img,.imgrow figure:hover img,.work figure.lit img,.imgrow figure.lit img{filter:grayscale(0%) contrast(1.06) brightness(1.1) saturate(1.12);transform:scale(1.03)}
+.imgrow figure::after,.work figure::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--violet-bright);opacity:0;transition:opacity .3s ease}
+.imgrow figure:hover::after,.imgrow figure.lit::after,.work figure:hover::after,.work figure.lit::after{opacity:1}
 .ph{background:repeating-linear-gradient(45deg,#17171C 0 10px,#1E1E25 10px 20px);border:1px solid var(--line-dk);display:flex;align-items:center;justify-content:center;text-align:center;padding:22px;min-height:230px}
 .ph b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--violet-bright);font-weight:600;margin-bottom:6px}
 .ph i{font-style:normal;font-size:.78rem;color:#8A8A95;display:block;max-width:34ch;line-height:1.45}
@@ -794,9 +799,21 @@ section.band.tint .factbox[open]>summary,section.band.light .factbox[open]>summa
         </div>
 
         <div class="imgrow" style="margin-top:30px">
-          <figure><img src="/images/commercial-auditorium-renovation-denver-metro.jpg" width="1600" height="1200" loading="lazy" alt="Large assembly hall during a commercial LED lighting retrofit, Cherry Hills Village Colorado"><figcaption>Main assembly space during the retrofit</figcaption></figure>
-          <figure><img src="/images/commercial-electrical-rough-in-overhead-cable.jpg" width="1000" height="1777" loading="lazy" alt="Overhead branch circuit and lighting control wiring above an open ceiling"><figcaption>Overhead circuits and control wiring</figcaption></figure>
-          <figure><img src="/images/commercial-renovation-demolition-phase.jpg" width="1100" height="1466" loading="lazy" alt="Demolition phase of a commercial renovation ahead of lighting installation"><figcaption>Demolition phase</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-auditorium-renovation-denver-metro.webp" type="image/webp"><img src="/images/commercial-auditorium-renovation-denver-metro.jpg" width="1600" height="1200" loading="lazy" alt="Crews on the auditorium floor at BRAVE Church during the LED lighting retrofit, Cherry Hills Village Colorado"></picture><figcaption>Main auditorium during the retrofit</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-renovation-demolition-phase.webp" type="image/webp"><img src="/images/commercial-renovation-demolition-phase.jpg" width="1200" height="1600" loading="lazy" alt="Demolition phase inside the BRAVE Church auditorium ahead of lighting installation"></picture><figcaption>Demolition phase, containment up</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-led-ceiling-lighting-denver.webp" type="image/webp"><img src="/images/commercial-led-ceiling-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="2x4 LED flat panels installed in a finished drop ceiling at BRAVE Church"></picture><figcaption>2&prime;&times;4&prime; LED panels &mdash; upstairs offices</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-hallway-led-lighting-denver.webp" type="image/webp"><img src="/images/commercial-hallway-led-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="LED flat panels energized in a corridor at BRAVE Church during the lighting retrofit"></picture><figcaption>Corridor panels energized ahead of tile</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-corridor-rough-in-denver.webp" type="image/webp"><img src="/images/commercial-corridor-rough-in-denver.jpg" width="1125" height="1500" loading="lazy" alt="Corridor ceiling grid and lighting rough-in in progress at BRAVE Church"></picture><figcaption>Corridor grid and rough-in</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-drop-ceiling-recessed-lighting-denver.webp" type="image/webp"><img src="/images/commercial-drop-ceiling-recessed-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Recessed LED downlights and a ceiling occupancy sensor set in acoustic tile"></picture><figcaption>Can lights and occupancy sensors</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-recessed-lighting-installation-denver.webp" type="image/webp"><img src="/images/commercial-recessed-lighting-installation-denver.jpg" width="1600" height="1200" loading="lazy" alt="Recessed LED can light trim detail in a commercial ceiling"></picture><figcaption>Can light trim detail</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-open-office-led-lighting-denver.webp" type="image/webp"><img src="/images/commercial-open-office-led-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Open office area lit by recessed LED fixtures in a new suspended ceiling grid"></picture><figcaption>Open office area complete</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-church-wall-lighting-denver.webp" type="image/webp"><img src="/images/commercial-church-wall-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="LED wall sconces lighting the GO MAKE DISCIPLES feature wall at BRAVE Church"></picture><figcaption>Lobby feature wall sconces</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-interior-wall-lighting-denver.webp" type="image/webp"><img src="/images/commercial-interior-wall-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="LED wall sconces washing the YOU ARE LOVED accent wall at BRAVE Church"></picture><figcaption>Accent wall lighting</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-exterior-wall-sconce-denver.webp" type="image/webp"><img src="/images/commercial-exterior-wall-sconce-denver.jpg" width="1600" height="1200" loading="lazy" alt="Exterior LED wall sconce on a brick column at the BRAVE Church entrance"></picture><figcaption>Exterior entry sconce</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-cafe-pendant-lighting-denver.webp" type="image/webp"><img src="/images/commercial-cafe-pendant-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Pendant and track lighting over the Brave Cafe coffee bar after the LED retrofit"></picture><figcaption>Brave Cafe pendant and track lighting</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-wall-light-fixture-denver.webp" type="image/webp"><img src="/images/commercial-wall-light-fixture-denver.jpg" width="1600" height="1200" loading="lazy" alt="LED vanity fixture above a restroom mirror at BRAVE Church"></picture><figcaption>Vanity fixture &mdash; 1 of 3</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-exit-emergency-lighting-denver.webp" type="image/webp"><img src="/images/commercial-exit-emergency-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Combination LED exit sign with emergency egress heads on a commercial ceiling"></picture><figcaption>Exit and emergency egress</figcaption></figure>
+          <figure class="gs"><picture><source srcset="/images/commercial-electrician-installation-denver-portrait.webp" type="image/webp"><img src="/images/commercial-electrician-installation-denver-portrait.jpg" width="1200" height="1500" loading="lazy" alt="Colpitts Electric electrician running MC cable at the structural deck"></picture><figcaption>MC cable at the deck</figcaption></figure>
         </div>
       </div>
     </section>
@@ -903,5 +920,20 @@ section.band.tint .factbox[open]>summary,section.band.light .factbox[open]>summa
   </div>
 </div>
 <a class="callbar" href="tel:+13039799422"><svg class="" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg> Call Colpitts Electric</a>
+<script>
+/* Grayscale-to-color reveal. Desktop uses :hover; touch devices light up on
+   scroll (>=60% visible) and on tap. */
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.imgrow figure,.work figure'));
+  if(!els.length)return;
+  els.forEach(function(el){el.addEventListener('click',function(){el.classList.toggle('lit');});});
+  if(!window.IntersectionObserver)return;
+  if(window.matchMedia&&window.matchMedia('(hover:hover)').matches)return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){e.target.classList.toggle('lit',e.intersectionRatio>=0.6);});
+  },{threshold:[0,0.6,1]});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
 </body>
 </html>

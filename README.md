@@ -71,6 +71,42 @@ amber highlight so it's visible on the page. Find them all:
    both ranking signals for image search. Do NOT put a city in a filename
    unless the photo was genuinely taken there.
 
+
+   ADDED 2026-08-19 — BRAVE Church (Cherry Hills Village) LED retrofit photos.
+   Source: Colpitts_Electric_Web_Photos.zip supplied by the client, installed
+   as-is (11 subjects, each as .jpg + .webp, plus a 1920x1080 cafe hero crop and
+   two portrait crops). Three extra frames were processed here to fill gaps the
+   zip did not cover: commercial-exit-emergency-lighting-denver,
+   commercial-open-office-led-lighting-denver, commercial-corridor-rough-in-denver.
+   The auditorium and demolition frames were re-exported from the full-resolution
+   originals; commercial-church-auditorium-denver-hero.jpg is a 16:10 crop of the
+   auditorium made for the home page hero.
+
+   CLIENT NAMING: approved 2026-08-19 for indexed pages. BRAVE Church is now
+   named on the home page hero alt text, the Commercial page ("Recent work"),
+   and /case-studies. The Brave Cafe signage photo is on indexed pages by that
+   approval. If the approval is ever withdrawn, the strings to change are the
+   "Recent work" heading and copy on the Commercial page plus the alt text on
+   both hero images.
+
+   FILENAME CAVEAT: the supplied files are named "...-denver.jpg" but the job is
+   in CHERRY HILLS VILLAGE, not Denver. That conflicts with the rule below about
+   not putting a city in a filename unless the photo was taken there. Names were
+   left as supplied to avoid breaking the client's own plan — worth correcting on
+   the next pass if nothing depends on them. Alt text and captions correctly say
+   Cherry Hills Village.
+
+   IMAGE TREATMENT: photos render grayscale and go to full color on hover
+   (desktop) or on scroll-into-view and tap (touch), with a purple hairline on
+   the active tile. Implemented as the .gs / .lit classes plus a small inline
+   IntersectionObserver script at the bottom of index.html, case-studies.html and
+   commercial-electrical-services-denver.html. Any new photo block should carry
+   class="gs" (new template) or sit inside .imgrow / .work (case studies) to pick
+   the behavior up automatically.
+
+   UNUSED BUT AVAILABLE: commercial-exterior-wall-sconce-denver-portrait.*,
+   commercial-hallway-led-lighting-denver-portrait.*.
+
    REAL photos of Melissa now in use: `melissa-colpitts.jpg` (studio headshot,
    Home owner block), `melissa-field-rough-in.jpg` (jobsite rough-in, About
    owner block), `melissa-crew-briefing.jpg` (directing a crew — used on About,

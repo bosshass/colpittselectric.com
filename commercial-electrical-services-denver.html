@@ -358,6 +358,15 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
 @media(max-width:900px){footer .cols{grid-template-columns:1fr 1fr;padding:0 20px}footer .base{padding:22px 20px 0}}
 @media(max-width:560px){footer .cols{grid-template-columns:1fr}}
 
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk)}
+.gal figure{margin:0;background:var(--ink2);overflow:hidden;position:relative}
+.gal img{width:100%;height:250px;object-fit:cover;display:block}
+.gal figcaption{padding:12px 15px;border-top:1px solid var(--line-dk);font-size:.78rem;color:var(--t3);transition:color .3s ease}
+.gal figure::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--violet-br);opacity:0;transition:opacity .3s ease}
+.gal figure:hover::after,.gal figure.lit::after{opacity:1}
+.gal figure:hover figcaption,.gal figure.lit figcaption{color:#fff}
+@media(max-width:900px){.gal{grid-template-columns:1fr}.gal img{height:230px}}
+.gs.lit img{filter:grayscale(0%) contrast(1.06) brightness(1.12) saturate(1.12)}
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;background:var(--violet);color:#fff;align-items:center;justify-content:center;gap:9px;padding:14px;font-size:.76rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
 @media(max-width:760px){.callbar{display:flex}body{padding-bottom:52px}}
 </style>
@@ -378,13 +387,30 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <p class="lede">Electrical contracting, skilled manpower and certified small business participation for commercial construction projects in Colorado.</p>
     <a class="btn" href="/contact">Request a bid <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div></div>
-  <div class="shot gs"><img src="/images/commercial-hero.jpg" alt="Commercial electrical construction on a Denver Metro project"></div>
+  <div class="shot gs"><picture><source srcset="/images/commercial-cafe-pendant-lighting-denver-hero.webp" type="image/webp"><img src="/images/commercial-cafe-pendant-lighting-denver-hero.jpg" width="1920" height="1080" fetchpriority="high" alt="Pendant and track lighting over the Brave Cafe coffee bar after the Colpitts Electric LED retrofit"></picture></div>
 </div><div class="subnav"><div class="in">
-  <a href="#contracting">Contracting</a><a href="#manpower">Manpower</a>
+  <a href="#contracting">Contracting</a><a href="#recent-work">Recent work</a><a href="#manpower">Manpower</a>
   <a href="#certifications">WOSB / EDWOSB / SBE</a><a href="#clients">Who we work with</a><a href="/contact">Request a bid</a>
 </div></div>
 
-<section class="light" id="contracting"><div class="wrap"><div class="gridhead"><div><span class="eyebrow">Commercial services</span><h2>What we handle.</h2></div><div><p class="sub">Commercial electrical work from new construction through ongoing service and maintenance.</p></div></div><div class="cells"><div class="cell"><span class="n">01</span><h3>New commercial construction</h3><p>Ground-up electrical installation and project coordination.</p></div><div class="cell"><span class="n">02</span><h3>Tenant finish &amp; remodel</h3><p>Electrical work for tenant improvements, buildouts and remodels.</p></div><div class="cell"><span class="n">03</span><h3>Lighting &amp; lighting controls</h3><p>Commercial lighting installation, upgrades and control systems.</p></div><div class="cell"><span class="n">04</span><h3>Troubleshooting &amp; service calls</h3><p>Diagnosis and repair for commercial electrical issues.</p></div><div class="cell"><span class="n">05</span><h3>Electrical maintenance</h3><p>Ongoing electrical support for facilities and commercial properties.</p></div><div class="cell"><span class="n">06</span><h3>Panel changes &amp; distribution</h3><p>Panel replacement, upgrades and power distribution work.</p></div></div></div></section><div class="feat rev" id="manpower">
+<section class="light" id="contracting"><div class="wrap"><div class="gridhead"><div><span class="eyebrow">Commercial services</span><h2>What we handle.</h2></div><div><p class="sub">Commercial electrical work from new construction through ongoing service and maintenance.</p></div></div><div class="cells"><div class="cell"><span class="n">01</span><h3>New commercial construction</h3><p>Ground-up electrical installation and project coordination.</p></div><div class="cell"><span class="n">02</span><h3>Tenant finish &amp; remodel</h3><p>Electrical work for tenant improvements, buildouts and remodels.</p></div><div class="cell"><span class="n">03</span><h3>Lighting &amp; lighting controls</h3><p>Commercial lighting installation, upgrades and control systems.</p></div><div class="cell"><span class="n">04</span><h3>Troubleshooting &amp; service calls</h3><p>Diagnosis and repair for commercial electrical issues.</p></div><div class="cell"><span class="n">05</span><h3>Electrical maintenance</h3><p>Ongoing electrical support for facilities and commercial properties.</p></div><div class="cell"><span class="n">06</span><h3>Panel changes &amp; distribution</h3><p>Panel replacement, upgrades and power distribution work.</p></div></div></div></section>
+
+<section class="dark" id="recent-work"><div class="wrap">
+  <div class="gridhead">
+    <div><span class="eyebrow">Recent work</span><h2>BRAVE Church &mdash; LED retrofit.</h2></div>
+    <div><p class="sub">426 LED fixtures, lighting controls and occupancy sensors across a 104,000 sq ft campus in Cherry Hills Village &mdash; installed in phases around a building that stayed open the whole time. Colpitts Electric is the electrical contractor of record on the permit.</p></div>
+  </div>
+  <div class="gal">
+  <figure class="gs"><picture><source srcset="/images/commercial-led-ceiling-lighting-denver.webp" type="image/webp"><img src="/images/commercial-led-ceiling-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="2x4 LED flat panels installed in a finished drop ceiling at BRAVE Church, Cherry Hills Village"></picture><figcaption>2&prime;&times;4&prime; LED panels &mdash; offices</figcaption></figure>
+  <figure class="gs"><picture><source srcset="/images/commercial-hallway-led-lighting-denver.webp" type="image/webp"><img src="/images/commercial-hallway-led-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="LED flat panels energized in a corridor at BRAVE Church during the lighting retrofit"></picture><figcaption>Corridor panels energized</figcaption></figure>
+  <figure class="gs"><picture><source srcset="/images/commercial-drop-ceiling-recessed-lighting-denver.webp" type="image/webp"><img src="/images/commercial-drop-ceiling-recessed-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Recessed LED downlights and a ceiling occupancy sensor set in acoustic tile"></picture><figcaption>Can lights and occupancy sensors</figcaption></figure>
+  <figure class="gs"><picture><source srcset="/images/commercial-open-office-led-lighting-denver.webp" type="image/webp"><img src="/images/commercial-open-office-led-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Open office area lit by recessed LED fixtures in a new suspended ceiling grid"></picture><figcaption>Open office area complete</figcaption></figure>
+  <figure class="gs"><picture><source srcset="/images/commercial-exit-emergency-lighting-denver.webp" type="image/webp"><img src="/images/commercial-exit-emergency-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Combination LED exit sign with emergency egress heads on a commercial ceiling"></picture><figcaption>Exit signage and emergency egress</figcaption></figure>
+  <figure class="gs"><picture><source srcset="/images/commercial-electrician-installation-denver.webp" type="image/webp"><img src="/images/commercial-electrician-installation-denver.jpg" width="1600" height="1200" loading="lazy" alt="Colpitts Electric electrician running MC cable at the structural deck"></picture><figcaption>MC cable at the structural deck</figcaption></figure>
+  </div>
+</div></section>
+
+<div class="feat rev" id="manpower">
   <div class="copy">
     <span class="eyebrow">Commercial manpower</span>
     <h2>Need more electrical labor?</h2>
@@ -438,5 +464,23 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
   </div>
 </footer>
 <a class="callbar" href="tel:+13039799422">Call (303) 979-9422</a>
+<script>
+/* Grayscale-to-color reveal. Desktop uses :hover; touch devices light up on
+   scroll (>=60% visible) and on tap. Purple accent stays constant. */
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.gs'));
+  if(!els.length)return;
+  els.forEach(function(el){
+    if(el.tagName==='A'||el.closest('a'))return;
+    el.addEventListener('click',function(){el.classList.toggle('lit');});
+  });
+  if(!window.IntersectionObserver)return;
+  if(window.matchMedia&&window.matchMedia('(hover:hover)').matches)return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){e.target.classList.toggle('lit',e.intersectionRatio>=0.6);});
+  },{threshold:[0,0.6,1]});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
 </body>
 </html>
