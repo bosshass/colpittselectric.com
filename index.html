@@ -221,13 +221,13 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 
 /* ---------- split hero ---------- */
 .hero{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;border-bottom:1px solid var(--line-dk)}
-.hero .copy{padding:78px 56px 78px 0;max-width:660px;margin-left:auto;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.hero .copy{padding:78px 56px 78px 0;max-width:660px;margin-left:auto;width:100%;min-width:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
 .hero h1{margin-bottom:20px}
 .hero .lede{margin-bottom:30px}
 .hero .shot{position:relative;min-height:0;aspect-ratio:16/10}
 .hero .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .heroin{max-width:var(--w);margin:0 auto;padding-left:40px}
-@media(max-width:1000px){.hero{grid-template-columns:1fr}.hero .copy{padding:56px 20px;max-width:none}.heroin{padding-left:0}.hero .shot{min-height:300px}}
+@media(max-width:1120px){.hero{grid-template-columns:1fr}.hero .copy{padding:56px 20px;max-width:none}.heroin{padding-left:0}.hero .shot{min-height:300px}}
 
 /* ---------- 3 image tiles ---------- */
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border-bottom:1px solid var(--line-dk)}
@@ -270,7 +270,7 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 
 /* ---------- split feature (image + copy) ---------- */
 .feat{display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
-.feat .copy{padding:80px 56px}
+.feat .copy{padding:80px 56px;min-width:0;overflow-wrap:anywhere}
 .feat .shot{position:relative;min-height:0;aspect-ratio:16/10}
 .feat .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .feat.rev .copy{order:2}
@@ -279,7 +279,7 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 .light .arrowlist li{color:var(--t2)}
 .arrowlist svg{color:var(--violet-lt);flex-shrink:0;margin-top:4px}
 .light .arrowlist svg{color:var(--violet)}
-@media(max-width:1000px){.feat{grid-template-columns:1fr}.feat .copy{padding:48px 20px;order:1!important}.feat .shot{min-height:280px;order:2!important}}
+@media(max-width:1120px){.feat{grid-template-columns:1fr}.feat .copy{padding:48px 20px;order:1!important}.feat .shot{min-height:280px;order:2!important}}
 
 /* ---------- about portrait ---------- */
 .portrait{max-width:420px;width:100%;margin-left:auto!important;align-self:start}
@@ -348,15 +348,15 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 
 /* ---------- footer ---------- */
 footer{background:var(--ink);border-top:1px solid var(--line-dk);padding:60px 0 34px}
-footer .cols{max-width:var(--w);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
+footer .cols{max-width:var(--w);margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.45fr .9fr .9fr 1.15fr;gap:48px}
 footer h4{font-size:.68rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#fff;margin-bottom:16px;font-family:var(--body)}
 footer ul{list-style:none;margin:0;padding:0}
 footer li{padding:5px 0}
-footer li a{font-size:.86rem;color:#8A8A92;transition:color .18s}
+footer li a{font-size:.86rem;color:#B6B6BE;transition:color .18s;overflow-wrap:anywhere}
 footer li a:hover{color:var(--violet-lt)}
-footer .blurb{font-size:.86rem;color:#8A8A92;margin-top:16px;max-width:34ch}
-footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-top:1px solid var(--line-dk);font-size:.76rem;color:#6A6A72;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-@media(max-width:900px){footer .cols{grid-template-columns:1fr 1fr;padding:0 20px}footer .base{padding:22px 20px 0}}
+footer .blurb{font-size:.86rem;color:#B6B6BE;margin-top:16px;max-width:30ch}
+footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-top:1px solid var(--line-dk);font-size:.76rem;color:#92929B;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:1100px){footer .cols{grid-template-columns:1fr 1fr;padding:0 20px;gap:36px 48px}footer .base{padding:22px 20px 0}}
 @media(max-width:560px){footer .cols{grid-template-columns:1fr}}
 
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;background:var(--violet);color:#fff;align-items:center;justify-content:center;gap:9px;padding:14px;font-size:.76rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
@@ -382,7 +382,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
   <div class="shot gs"><img src="/images/brave-church-auditorium-renovation-progress.webp" width="1448" height="1086" fetchpriority="high" alt="Crews working in the BRAVE Church auditorium during a commercial lighting renovation"></div>
 </div><div class="tiles">
   <a class="tile" href="/commercial-electrical-services-denver">
-    <img src="/images/brave-church-electricians-measuring-corridor-lighting.webp" width="1086" height="1448" alt="Electricians laying out corridor lighting on a commercial renovation">
+    <img src="/images/brave-church-ceiling-grid-led-lighting-installation.webp" width="1448" height="1086" alt="Commercial LED panels energized during ceiling-grid installation">
     <div class="in"><span class="n">01</span><h3>Commercial</h3>
       <p>New construction, tenant finish, lighting, service, maintenance and manpower.</p>
       <span class="go"><svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div></a>
@@ -392,7 +392,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
       <p>Service calls, remodels, panel changes, lighting and new residential construction.</p>
       <span class="go"><svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div></a>
   <a class="tile" href="/contact">
-    <img src="/images/brave-church-corridor-lighting-progress.webp" width="1086" height="1448" alt="Commercial corridor lighting installation in progress">
+    <img src="/images/commercial-exit-emergency-lighting-denver.webp" width="1600" height="1200" alt="Commercial exit and emergency lighting installation">
     <div class="in"><span class="n">03</span><h3>Start a project</h3>
       <p>Tell us what you need. We&rsquo;ll get back to you with the next step.</p>
       <span class="go"><svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div></a>
@@ -422,7 +422,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
         <img src="/images/residential-service.jpg" alt="Residential electrical service">
         <div class="in"><h3>Residential electrical</h3><p>Repairs, upgrades, remodels, lighting and new construction.</p></div></a>
       <a class="wcard" href="/commercial-electrical-manpower-denver">
-        <img src="/images/brave-church-electricians-measuring-corridor-lighting.webp" width="1086" height="1448" alt="Two electricians coordinating lighting layout on site">
+        <img src="/images/crew-conduit-collaboration.jpg" alt="Colpitts Electric crew coordinating conduit work on site">
         <div class="in"><h3>Skilled manpower</h3><p>Field support for commercial projects when you need additional labor.</p></div></a>
     </div>
   </div>
