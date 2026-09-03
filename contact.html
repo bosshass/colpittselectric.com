@@ -164,6 +164,7 @@ a{color:inherit;text-decoration:none}
 .gs{overflow:hidden}
 img{image-rendering:auto}
 .gs img{filter:grayscale(100%) contrast(1.04) brightness(.92);transition:filter .4s ease,transform .7s ease}
+.gs.lit img{filter:grayscale(0%) contrast(1.06) brightness(1.12) saturate(1.12)}
 .gs:hover img,.gs:focus-within img{filter:grayscale(0%) contrast(1.06) brightness(1.12) saturate(1.12)}
 figure.gs:hover img,a.gs:hover img{transform:scale(1.03)}
 
@@ -378,7 +379,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <p class="lede">Commercial bid, residential service or manpower request. Send the details and we&rsquo;ll follow up.</p>
     <a class="btn" href="#form">Send project request <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div></div>
-  <div class="shot gs"><img src="/images/contact-hero.jpg" alt="Colpitts Electric electricians on a commercial jobsite"></div>
+  <div class="shot gs"><img src="/images/brave-church-corridor-lighting-progress.webp" width="1086" height="1448" alt="Colpitts Electric commercial corridor lighting work in progress"></div>
 </div><section class="dark" id="form"><div class="wrap">
   <div class="cwrap">
     <div>
@@ -467,5 +468,8 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
   </div>
 </footer>
 <a class="callbar" href="tel:+13039799422">Call (303) 979-9422</a>
+<script>
+(function(){var els=[].slice.call(document.querySelectorAll('.gs'));if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('lit',e.isIntersecting&&e.intersectionRatio>.55);});},{threshold:[.55]});els.forEach(function(el){io.observe(el);});})();
+</script>
 </body>
 </html>
