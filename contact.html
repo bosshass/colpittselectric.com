@@ -383,7 +383,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <p class="lede">Commercial bid, residential service or manpower request. Send the details and we&rsquo;ll follow up.</p>
     <a class="btn" href="#form">Send project request <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div></div>
-  <div class="shot gs"><img src="/images/brave-church-corridor-lighting-progress.webp" width="1086" height="1448" alt="Colpitts Electric commercial corridor lighting work in progress"></div>
+  <div class="shot gs"><img src="/images/commercial-electrician-installation-denver-portrait.webp" width="1200" height="1500" alt="Colpitts Electric electrician completing an installation on a commercial project"></div>
 </div><section class="dark" id="form"><div class="wrap">
   <div class="cwrap">
     <div>
@@ -436,8 +436,8 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     e.preventDefault();
     if(f.action.indexOf('YOUR_FORM_ID')!==-1){
       var d=new FormData(f),lines=['Project type: '+(d.get('project_type')||''),'Name: '+(d.get('name')||''),'Company: '+(d.get('company')||''),'Phone: '+(d.get('phone')||''),'Email: '+(d.get('email')||''),'Project city: '+(d.get('city')||''),'','Project details:',''+(d.get('message')||'')];
-      s.className='fstat ok';s.textContent='Opening your email app to send this request…';
-      window.location.href='mailto:melissa@colpittselectric.com?subject='+encodeURIComponent('Project request from '+(d.get('name')||'website visitor'))+'&body='+encodeURIComponent(lines.join('\n'));
+      s.className='fstat ok';s.textContent='Opening an email to Melissa with Sara copied…';
+      window.location.href='mailto:melissa@colpittselectric.com?cc='+encodeURIComponent('sara@jnbservice.com')+'&subject='+encodeURIComponent('Project request from '+(d.get('name')||'website visitor'))+'&body='+encodeURIComponent(lines.join('\n'));
       return;
     }
     s.className='fstat';s.textContent='Sending\u2026';b.disabled=true;

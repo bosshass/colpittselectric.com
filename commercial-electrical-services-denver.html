@@ -362,14 +362,22 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
 @media(max-width:1100px){footer .cols{grid-template-columns:1fr 1fr;padding:0 20px;gap:36px 48px}footer .base{padding:22px 20px 0}}
 @media(max-width:560px){footer .cols{grid-template-columns:1fr}}
 
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border:1px solid var(--line-dk)}
-.gal figure{margin:0;background:var(--ink2);overflow:hidden;position:relative}
-.gal img{width:100%;height:250px;object-fit:cover;display:block}
-.gal figcaption{padding:12px 15px;border-top:1px solid var(--line-dk);font-size:.78rem;color:var(--t3);transition:color .3s ease}
-.gal figure::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--violet-br);opacity:0;transition:opacity .3s ease}
-.gal figure:hover::after,.gal figure.lit::after{opacity:1}
-.gal figure:hover figcaption,.gal figure.lit figcaption{color:#fff}
-@media(max-width:900px){.gal{grid-template-columns:1fr}.gal img{height:230px}}
+.casecard{border:1px solid var(--line-dk);background:var(--ink2)}
+.caselead{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(330px,.65fr)}
+.casevisual{min-height:470px;position:relative;overflow:hidden}
+.casevisual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.casecopy{padding:48px;display:flex;flex-direction:column;justify-content:center}
+.casecopy .lede{font-size:1rem;margin:18px 0 28px}
+.casefacts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-dk);border-bottom:1px solid var(--line-dk);margin-bottom:30px}
+.casefact{padding:16px 12px 16px 0}
+.casefact b{display:block;font-family:var(--disp);font-size:1.35rem;color:#fff;line-height:1}
+.casefact span{display:block;margin-top:7px;color:var(--t3);font-size:.72rem;line-height:1.35}
+.casestrip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-dk);border-top:1px solid var(--line-dk)}
+.casestrip figure{margin:0;background:var(--ink2);overflow:hidden;position:relative}
+.casestrip img{width:100%;height:220px;object-fit:cover;display:block}
+.casestrip figcaption{padding:12px 15px;border-top:1px solid var(--line-dk);font-size:.78rem;color:var(--t3)}
+@media(max-width:1050px){.caselead{grid-template-columns:1fr}.casevisual{min-height:380px}.casecopy{padding:38px}.casestrip img{height:200px}}
+@media(max-width:700px){.casevisual{min-height:280px}.casecopy{padding:28px 22px}.casefacts,.casestrip{grid-template-columns:1fr}.casefact{border-bottom:1px solid var(--line-dk)}.casestrip img{height:230px}}
 .gs.lit img{filter:grayscale(0%) contrast(1.06) brightness(1.12) saturate(1.12)}
 .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;background:var(--violet);color:#fff;align-items:center;justify-content:center;gap:9px;padding:14px;font-size:.76rem;font-weight:600;letter-spacing:.13em;text-transform:uppercase}
 @media(max-width:760px){.callbar{display:flex}body{padding-bottom:52px}}
@@ -401,20 +409,24 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
 
 <section class="dark" id="recent-work"><div class="wrap">
   <div class="gridhead">
-    <div><span class="eyebrow">Recent work</span><h2>BRAVE Church &mdash; LED retrofit.</h2></div>
-    <div><p class="sub">426 LED fixtures, lighting controls and occupancy sensors across a 104,000 sq ft campus in Cherry Hills Village &mdash; installed in phases around a building that stayed open the whole time. Colpitts Electric is the electrical contractor of record on the permit.</p></div>
+    <div><span class="eyebrow">Featured portfolio</span><h2>Commercial work in context.</h2></div>
+    <div><p class="sub">A closer look at the scope, field work and results behind one of our recent commercial projects.</p></div>
   </div>
-  <div class="gal">
-  <figure class="gs"><picture><source srcset="/images/commercial-led-ceiling-lighting-denver.webp" type="image/webp"><img src="/images/commercial-led-ceiling-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="2x4 LED flat panels installed in a finished drop ceiling at BRAVE Church, Cherry Hills Village"></picture><figcaption>2&prime;&times;4&prime; LED panels &mdash; offices</figcaption></figure>
-  <figure class="gs"><picture><source srcset="/images/commercial-hallway-led-lighting-denver.webp" type="image/webp"><img src="/images/commercial-hallway-led-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="LED flat panels energized in a corridor at BRAVE Church during the lighting retrofit"></picture><figcaption>Corridor panels energized</figcaption></figure>
-  <figure class="gs"><picture><source srcset="/images/commercial-drop-ceiling-recessed-lighting-denver.webp" type="image/webp"><img src="/images/commercial-drop-ceiling-recessed-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Recessed LED downlights and a ceiling occupancy sensor set in acoustic tile"></picture><figcaption>Can lights and occupancy sensors</figcaption></figure>
-  <figure class="gs"><picture><source srcset="/images/commercial-open-office-led-lighting-denver.webp" type="image/webp"><img src="/images/commercial-open-office-led-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Open office area lit by recessed LED fixtures in a new suspended ceiling grid"></picture><figcaption>Open office area complete</figcaption></figure>
-  <figure class="gs"><picture><source srcset="/images/commercial-exit-emergency-lighting-denver.webp" type="image/webp"><img src="/images/commercial-exit-emergency-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Combination LED exit sign with emergency egress heads on a commercial ceiling"></picture><figcaption>Exit signage and emergency egress</figcaption></figure>
-  <figure class="gs"><picture><source srcset="/images/commercial-electrician-installation-denver.webp" type="image/webp"><img src="/images/commercial-electrician-installation-denver.jpg" width="1600" height="1200" loading="lazy" alt="Colpitts Electric electrician running MC cable at the structural deck"></picture><figcaption>MC cable at the structural deck</figcaption></figure>
-  <figure class="gs"><img src="/images/brave-church-electricians-measuring-corridor-lighting.webp" width="1086" height="1448" loading="lazy" alt="Colpitts Electric electricians measuring recessed lighting locations in a corridor at BRAVE Church in Cherry Hills Village"><figcaption>Corridor lighting layout in progress</figcaption></figure>
-  <figure class="gs"><img src="/images/brave-church-auditorium-renovation-progress.webp" width="1448" height="1086" loading="lazy" alt="BRAVE Church auditorium renovation in progress during the commercial LED lighting retrofit in Cherry Hills Village"><figcaption>Auditorium renovation in progress</figcaption></figure>
-  <figure class="gs"><img src="/images/brave-church-ceiling-grid-led-lighting-installation.webp" width="1448" height="1086" loading="lazy" alt="LED flat panels energized within an open commercial ceiling grid at BRAVE Church in Cherry Hills Village"><figcaption>LED panels energized during ceiling work</figcaption></figure>
-  </div>
+  <article class="casecard">
+    <div class="caselead">
+      <div class="casevisual gs"><img src="/images/brave-church-auditorium-renovation-progress.webp" width="1448" height="1086" loading="lazy" alt="BRAVE Church auditorium renovation in progress during the commercial LED lighting retrofit"></div>
+      <div class="casecopy"><span class="eyebrow">Case study &middot; Cherry Hills Village</span><h3>BRAVE Church LED retrofit.</h3>
+        <p class="lede">A phased lighting and controls upgrade across an occupied campus. Colpitts Electric holds the electrical permit and coordinated the work around a facility that remained open.</p>
+        <div class="casefacts"><div class="casefact"><b>426</b><span>LED fixtures</span></div><div class="casefact"><b>104K</b><span>square-foot campus</span></div><div class="casefact"><b>Phased</b><span>occupied-site installation</span></div></div>
+        <a class="btn out" href="/case-studies#brave-church">View full case study <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </div>
+    </div>
+    <div class="casestrip">
+      <figure class="gs"><picture><source srcset="/images/commercial-led-ceiling-lighting-denver.webp" type="image/webp"><img src="/images/commercial-led-ceiling-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Finished LED panels at BRAVE Church"></picture><figcaption>Finished office lighting</figcaption></figure>
+      <figure class="gs"><img src="/images/brave-church-electricians-measuring-corridor-lighting.webp" width="1086" height="1448" loading="lazy" alt="Electricians laying out corridor lighting at BRAVE Church"><figcaption>Corridor layout in progress</figcaption></figure>
+      <figure class="gs"><picture><source srcset="/images/commercial-exit-emergency-lighting-denver.webp" type="image/webp"><img src="/images/commercial-exit-emergency-lighting-denver.jpg" width="1600" height="1200" loading="lazy" alt="Exit sign and emergency lighting at BRAVE Church"></picture><figcaption>Exit and emergency lighting</figcaption></figure>
+    </div>
+  </article>
 </div></section>
 
 <div class="feat rev" id="manpower">
