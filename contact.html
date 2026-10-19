@@ -381,7 +381,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <span class="eyebrow">Contact Colpitts Electric</span>
     <h1>Start a project.</h1>
     <p class="lede">Commercial bid, residential service or manpower request. Send the details and we&rsquo;ll follow up.</p>
-    <a class="btn" href="#form">Open email to send request <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+    <a class="btn" href="#form">Email Melissa About Your Project <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div></div>
   <div class="shot gs"><img src="/images/commercial-electrician-installation-denver-portrait.webp" width="1200" height="1500" alt="Colpitts Electric electrician completing an installation on a commercial project"></div>
 </div><section class="dark" id="form"><div class="wrap">
@@ -401,48 +401,15 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <div>
       <h2 style="margin-bottom:26px">Project request</h2>
       <!-- Email-only project request. Visitor must press Send in their mail app. -->
-      <form id="pf" action="mailto:melissa@colpittselectric.com" method="POST">
-        <input type="hidden" name="_subject" value="New project request from colpittselectric.com">
-        <div style="position:absolute;left:-9999px" aria-hidden="true"><label for="hp">Leave empty</label><input id="hp" name="_gotcha" tabindex="-1" autocomplete="off"></div>
-        <div class="f2">
-          <div class="fld"><label for="pt">Project type</label>
-            <select id="pt" name="project_type">
-              <option>Commercial bid</option><option>Residential service</option>
-              <option>Electrical manpower</option><option>Something else</option></select></div>
-          <div class="fld"><label for="nm">Name</label><input id="nm" name="name" type="text" placeholder="Your name" autocomplete="name" required></div>
-        </div>
-        <div class="f2">
-          <div class="fld"><label for="co">Company</label><input id="co" name="company" type="text" placeholder="Company name" autocomplete="organization"></div>
-          <div class="fld"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" placeholder="Phone number" autocomplete="tel"></div>
-        </div>
-        <div class="f2">
-          <div class="fld"><label for="em">Email</label><input id="em" name="email" type="email" placeholder="Email address" autocomplete="email" required></div>
-          <div class="fld"><label for="ct">Project city</label><input id="ct" name="city" type="text" placeholder="City"></div>
-        </div>
-        <div class="fld"><label for="ds">Project details</label><textarea id="ds" name="message" placeholder="Scope, timing and useful project details." required></textarea></div>
-        <button class="btn" type="submit" id="sb">Open email to send request <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></button>
-        <p class="fstat" id="fs" role="status" aria-live="polite">Clicking opens your default email app; you must press Send there. If nothing opens, use the direct email link below.</p>
-        <p style="margin-top:16px">Or email Melissa directly: <a href="mailto:melissa@colpittselectric.com?cc=sara%40jnbservice.com&amp;subject=Colpitts%20Electric%20Project%20Request" style="color:inherit;text-decoration:underline">melissa@colpittselectric.com</a></p>
-      </form>
+      <p style="margin-bottom:20px">Click below to open Gmail or your preferred email app and tell Melissa about your project.</p>
+      <a class="btn" href="mailto:melissa@colpittselectric.com?cc=sara%40jnbservice.com&amp;subject=New%20Project%20Request%20-%20Colpitts%20Electric">Email Melissa About Your Project <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      <p style="margin-top:20px">Or call <a href="tel:+13039799422" style="text-decoration:underline;color:inherit">(303) 979-9422</a>. You can also copy <strong>melissa@colpittselectric.com</strong> into Gmail.</p>
     </div>
   </div>
 </div></section>
 
 <section class="light"><div class="wrap"><div class="gridhead"><div><span class="eyebrow">Not sure where to start?</span><h2>Choose the closest fit.</h2></div><div><p class="sub">Pick the option that is closest to what you need.</p></div></div><div class="cells"><div class="cell"><span class="n">01</span><h3>Commercial</h3><p>New construction, tenant finish, service, lighting, maintenance or bid requests.</p></div><div class="cell"><span class="n">02</span><h3>Residential</h3><p>Service calls, repairs, remodels, panels, lighting or new construction.</p></div><div class="cell"><span class="n">03</span><h3>Manpower</h3><p>Commercial electrical labor support for current or upcoming projects.</p></div></div></div></section>
-<script>
-(function(){
-  var f=document.getElementById('pf'),s=document.getElementById('fs'),b=document.getElementById('sb');
-  if(!f)return;
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    var d=new FormData(f);
-    var lines=['Project type: '+(d.get('project_type')||''),'Name: '+(d.get('name')||''),'Company: '+(d.get('company')||''),'Phone: '+(d.get('phone')||''),'Email: '+(d.get('email')||''),'Project city: '+(d.get('city')||''),'','Project details:',''+(d.get('message')||'')];
-    s.className='fstat ok';
-    s.textContent='Your email app should open. Press Send in your email app to complete your request. If nothing opens, call (303) 979-9422.';
-    window.location.href='mailto:melissa@colpittselectric.com?cc='+encodeURIComponent('sara@jnbservice.com')+'&subject='+encodeURIComponent('New Project Request - Colpitts Electric - '+(d.get('name')||'Website visitor'))+'&body='+encodeURIComponent(lines.join('\n'));
-  });
-})();
-</script>
+
 </main>
 <footer>
   <div class="cols">
