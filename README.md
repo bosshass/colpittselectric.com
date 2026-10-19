@@ -10,12 +10,11 @@ No build step. Plain HTML + inline CSS. Deployed on Vercel as a static site.
 | `index.html` | `/` |
 | `commercial-electrical-services-denver.html` | `/commercial-electrical-services-denver` |
 | `residential-electrician-denver.html` | `/residential-electrician-denver` |
-| `commercial-electrical-manpower-denver.html` | `/commercial-electrical-manpower-denver` |
 | `about-colpitts-electric.html` | `/about-colpitts-electric` |
 | `contact.html` | `/contact` |
 
 `vercel.json` sets `cleanUrls: true`, so links are extensionless. Short vanity
-paths (`/about`, `/commercial`, `/residential`, `/manpower`) 301 to the SEO URLs.
+paths (`/about`, `/commercial`, `/residential`) 301 to the SEO URLs.
 
 ## Local preview
 
@@ -243,3 +242,7 @@ Yelp, Apple Business Connect, and any contractor directories for the same.
 - Submit `sitemap.xml` in Google Search Console
 - Match Google Business Profile services to the service names used here
 - Add Google Analytics or Plausible if wanted
+
+## October 2026 service update
+
+Electrical manpower is no longer offered as a public service. The former manpower page was removed and its URL redirects to commercial electrical services. Do not add manpower services back to site navigation, service copy, or the XML sitemap without client approval.
