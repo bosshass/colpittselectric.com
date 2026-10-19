@@ -6,7 +6,8 @@
     { "source": "/about", "destination": "/about-colpitts-electric", "permanent": true },
     { "source": "/commercial", "destination": "/commercial-electrical-services-denver", "permanent": true },
     { "source": "/residential", "destination": "/residential-electrician-denver", "permanent": true },
-    { "source": "/manpower", "destination": "/commercial-electrical-manpower-denver", "permanent": true },
+    { "source": "/manpower", "destination": "/commercial-electrical-services-denver", "permanent": true },
+    { "source": "/commercial-electrical-manpower-denver", "destination": "/commercial-electrical-services-denver", "permanent": true },
     { "source": "/services", "destination": "/commercial-electrical-services-denver", "permanent": true },
     { "source": "/contact-us", "destination": "/contact", "permanent": true }
   ],
