@@ -229,6 +229,13 @@ nav a:hover,nav a[aria-current=page]{color:var(--violet-lt)}
 .hero .lede{margin-bottom:30px}
 .hero .shot{position:relative;min-height:0;aspect-ratio:16/10}
 .hero .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* Keep the hero usable when its image fails to load. */
+.hero.hero-no-image{display:block}
+.hero.hero-no-image .shot{display:none}
+.hero.hero-no-image .heroin{max-width:var(--w);padding:0 40px}
+.hero.hero-no-image .copy{margin:0;max-width:860px;padding:70px 0}
+@media(max-width:760px){.hero.hero-no-image .heroin{padding:0 20px}.hero.hero-no-image .copy{padding:46px 0}}
+
 .heroin{max-width:var(--w);margin:0 auto;padding-left:40px}
 @media(max-width:1400px){.hero{grid-template-columns:1fr}.hero .copy{padding:56px 40px;max-width:760px;margin:0}.heroin{padding-left:0}.hero .shot{min-height:340px}}
 
@@ -383,7 +390,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <p class="lede">Electrical service, remodels, panel changes, lighting and new construction for homeowners in the Denver metro area.</p>
     <a class="btn" href="/contact">Request service <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div></div>
-  <div class="shot gs"><img src="/images/colpitts-electric-service-van-denver.jpg" width="600" height="800" alt="Colpitts Electric service van ready for residential electrical work in the Denver metro area"></div>
+  <div class="shot gs"><img onerror="this.closest(\'.hero\').classList.add(\'hero-no-image\')" src="/images/colpitts-electric-service-van-denver.jpg" width="600" height="800" alt="Colpitts Electric service van ready for residential electrical work in the Denver metro area"></div>
 </div><section class="light"><div class="wrap"><div class="gridhead"><div><span class="eyebrow">Residential services</span><h2>Electrical work for your home.</h2></div><div><p class="sub">Simple list. No filler. If you need something outside this list, ask us.</p></div></div><div class="cells"><div class="cell"><span class="n">01</span><h3>Service calls</h3><p>Electrical repairs and service for existing homes.</p></div><div class="cell"><span class="n">02</span><h3>Troubleshooting</h3><p>Diagnosis of electrical problems and recurring issues.</p></div><div class="cell"><span class="n">03</span><h3>Panel changes</h3><p>Electrical panel replacement and upgrades.</p></div><div class="cell"><span class="n">04</span><h3>Remodels &amp; additions</h3><p>Electrical work for kitchens, bathrooms, additions and renovations.</p></div><div class="cell"><span class="n">05</span><h3>Lighting &amp; lighting controls</h3><p>Lighting installation, upgrades and controls.</p></div><div class="cell"><span class="n">06</span><h3>New residential construction</h3><p>Electrical installation for new home construction.</p></div></div></div></section><div class="feat">
   <div class="shot gs"><img src="/images/residential-outdoor-lighting-inspiration.webp" width="720" height="1080" alt="Warm outdoor patio and landscape lighting inspiration"></div>
   <div class="copy">
