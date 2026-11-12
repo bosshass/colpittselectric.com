@@ -15,12 +15,13 @@
 <link rel="icon" href="/favicon-512.png" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Electrical Contractor Denver & Littleton | Colpitts Electric</title>
-<meta name="description" content="Colpitts Electric provides commercial and residential electrical services throughout Denver and Littleton. Master Electrician-led, woman-owned contractor.">
+<meta name="description" content="Woman-owned Denver electrical contractor for commercial tenant finish, construction, lighting and residential service. WOSB/EDWOSB certified. Call Colpitts Electric.">
 <link rel="canonical" href="https://colpittselectric.com/">
 <meta property="og:title" content="Electrical Contractor Denver & Littleton | Colpitts Electric">
 <meta property="og:description" content="Commercial and residential electrical contracting in the Denver metro area. Master Electrician-led, woman-owned, licensed and insured.">
 <meta property="og:url" content="https://colpittselectric.com/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://colpittselectric.com/images/brave-church-auditorium-renovation-progress.webp">
 <meta name="theme-color" content="#0B0B0C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -388,7 +389,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <div class="tick"></div>
     <span class="eyebrow">Commercial + residential electrical</span>
     <h1>Electrical work. Done right.</h1>
-    <p class="lede">Commercial and residential electrical contracting in Denver, Littleton and the surrounding metro area. Master Electrician-led, licensed and insured.</p>
+    <p class="lede">Woman-owned electrical contractor serving Denver and Littleton. Commercial tenant finish, new construction, lighting and residential service. Master Electrician-led, licensed and insured.</p>
     <a class="btn" href="/commercial-electrical-services-denver">Commercial services <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
   </div></div>
   <div class="shot gs"><img src="/images/brave-church-auditorium-renovation-progress.webp" width="1448" height="1086" fetchpriority="high" alt="Crews working in the BRAVE Church auditorium during a commercial lighting renovation"></div>
@@ -396,7 +397,7 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
   <a class="tile" href="/commercial-electrical-services-denver">
     <img src="/images/commercial-finished-led-ceiling.webp" width="1800" height="1350" alt="Finished commercial ceiling with LED panels and recessed lighting">
     <div class="in"><span class="n">01</span><h3>Commercial</h3>
-      <p>New construction, tenant finish, lighting, service and maintenance.</p>
+      <p>Commercial tenant finish, new construction, lighting, service and maintenance.</p>
       <span class="go"><svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div></a>
   <a class="tile" href="/residential-electrician-denver">
     <img src="/images/residential-finished-lighting.jpg" alt="Finished residential lighting in a Denver-area home">
@@ -492,6 +493,18 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     es.forEach(function(e){e.target.classList.toggle('lit',e.intersectionRatio>=0.6);});
   },{threshold:[0,0.6,1]});
   els.forEach(function(el){io.observe(el);});
+})();
+</script>
+<script>
+/* Measures intent to contact, not confirmed inquiries. */
+(function(){
+  document.addEventListener('click',function(e){
+    var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+    if(!a||typeof window.gtag!=='function')return;
+    var h=a.getAttribute('href')||'';
+    var m=h.indexOf('tel:')===0?'phone':h.indexOf('mailto:')===0?'email':h.indexOf('/contact')===0?'contact_page':null;
+    if(m)window.gtag('event','contact_click',{contact_method:m,page_path:window.location.pathname});
+  });
 })();
 </script>
 </body>
