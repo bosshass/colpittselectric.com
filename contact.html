@@ -15,7 +15,7 @@
 <link rel="icon" href="/favicon-512.png" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Contact Colpitts Electric | Denver Metro Electrical Contractor</title>
-<meta name="description" content="Start a project with Colpitts Electric. Commercial bids and residential electrical service in the Denver metro area.">
+<meta name="description" content="Request a commercial electrical bid or residential service in Denver and Littleton. Call or email Colpitts Electric, a woman-owned WOSB/EDWOSB contractor.">
 <link rel="canonical" href="https://colpittselectric.com/contact">
 <meta property="og:title" content="Contact Colpitts Electric | Denver Metro Electrical Contractor">
 <meta property="og:description" content="Start a project with Colpitts Electric. Commercial bids and residential electrical service in the Denver metro area.">
@@ -409,9 +409,9 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
     <div>
       <h2 style="margin-bottom:26px">Project request</h2>
       <!-- Email-only project request. Visitor must press Send in their mail app. -->
-      <p style="margin-bottom:20px">Click below to open Gmail or your preferred email app and tell Melissa about your project.</p>
+      <p style="margin-bottom:20px">For a commercial bid, include the jobsite location, scope or plans, and timeline. Email Melissa directly or call to discuss your project.</p>
       <a class="btn" href="mailto:melissa@colpittselectric.com?cc=sara%40jnbservice.com&amp;subject=New%20Project%20Request%20-%20Colpitts%20Electric">Email Melissa About Your Project <svg class="ar" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-      <p style="margin-top:20px">Or call <a href="tel:+13039799422" style="text-decoration:underline;color:inherit">(303) 979-9422</a>. You can also copy <strong>melissa@colpittselectric.com</strong> into Gmail.</p>
+      <p style="margin-top:20px"><a href="tel:+13039799422" style="text-decoration:underline;color:inherit">Prefer to talk? Call (303) 979-9422</a>.</p><p style="margin-top:12px;font-size:.88rem">Email opens your email app; your request is sent only after you press Send.</p>
     </div>
   </div>
 </div></section>
@@ -448,6 +448,18 @@ footer .base{max-width:var(--w);margin:44px auto 0;padding:22px 40px 0;border-to
 <a class="callbar" href="tel:+13039799422">Call (303) 979-9422</a>
 <script>
 (function(){var els=[].slice.call(document.querySelectorAll('.gs'));if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){e.target.classList.toggle('lit',e.isIntersecting&&e.intersectionRatio>.55);});},{threshold:[.55]});els.forEach(function(el){io.observe(el);});})();
+</script>
+<script>
+/* Measures intent to contact, not confirmed inquiries. */
+(function(){
+  document.addEventListener('click',function(e){
+    var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+    if(!a||typeof window.gtag!=='function')return;
+    var h=a.getAttribute('href')||'';
+    var m=h.indexOf('tel:')===0?'phone':h.indexOf('mailto:')===0?'email':h.indexOf('/contact')===0?'contact_page':null;
+    if(m)window.gtag('event','contact_click',{contact_method:m,page_path:window.location.pathname});
+  });
+})();
 </script>
 </body>
 </html>
